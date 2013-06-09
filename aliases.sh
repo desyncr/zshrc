@@ -5,7 +5,7 @@ alias lt="ls -lthr "
 alias df="df -h "
 
 # custom shortcuts
-alias dumprl="dumpr.sh --list=list"
+alias dlist="dumpr.sh --list=list"
 alias turl="curl --socks5-hostname 127.0.0.1:9050 "
 
 # git

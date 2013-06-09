@@ -10,7 +10,7 @@ dladd() {
     DUMPR_DL_LIST='list'
   fi
 
-  listname=$DUMPR_DL_DIR '/' $DUMPR_DL_LIST
+  listname="$DUMPR_DL_DIR/$DUMPR_DL_LIST"
 
   for i; do
     echo "$i" >> $listname

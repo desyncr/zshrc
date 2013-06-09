@@ -4,6 +4,6 @@
 dumprla() {
   listname='list'
   for i; do
-    echo '$i' >> $listname
+    echo "$i" >> $listname
   done
 }

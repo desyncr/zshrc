@@ -1,6 +1,4 @@
 # custom functions
-
-# appends the arguments to the list
 dladd() {
   if [ -z $DUMPR_DL_DIR ]; then
     DUMPR_DL_DIR='.'

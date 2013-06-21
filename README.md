@@ -11,8 +11,8 @@ Install
 
 Configure
 ---------
-* ``export ZSH_CUSTOM_PLUGINS=(your prefered plugins and autocompletion files)
-* ``export ZSH_THEME='your-theme'
+* ``export ZSH_CUSTOM_PLUGINS=(your prefered plugins and autocompletion files)``
+* ``export ZSH_THEME='your-theme'``
 
 Check ``bootstrap.zsh`` for examples and default configuration.
 

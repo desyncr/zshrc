@@ -5,7 +5,8 @@ source $MYZSH/aliases.sh
 source $MYZSH/lib/*.sh
 
 # load custom theme
-[[ -z $ZSH_THEME ]] && ZSH_THEME='af-magic-mod'
+[[ -z $ZSH_CUSTOM_THEME ]] && ZSH_CUSTOM_THEME='af-magic-mod'
+ZSH_THEME=$ZSH_CUSTOM_THEME
 
 # define custom plugins to load
 [[ -z $ZSH_CUSTOM_PLUGINS ]] && 

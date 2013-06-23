@@ -13,6 +13,6 @@ alias gc="git commit -m "
 alias gs="git status"
 
 # zsh related
-alias zcustom="vim $ZSH/custom.sh"
-alias zalias="vim $ZSH/aliases.sh"
-alias zfunctions="vim $ZSH/functions.sh"
+alias zcustom="vim $ZSH_CUSTOM/custom.sh"
+alias zalias="vim $ZSH_CUSTOM/aliases.sh"
+alias zfunctions="vim $ZSH_CUSTOM/functions.sh"

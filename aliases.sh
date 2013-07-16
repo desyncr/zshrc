@@ -3,6 +3,7 @@ alias mkdir="mkdir -p "
 alias ll="ls -lShr "
 alias lt="ls -lthr "
 alias df="df -h "
+alias psgrep="ps aux | grep "
 
 # custom shortcuts
 alias dlist="dumpr.sh --list=list"

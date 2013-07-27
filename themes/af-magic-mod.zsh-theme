@@ -18,12 +18,12 @@ RPS1='${return_code}'
 
 
 # color vars
-eval my_gray='$FG[237]'
+eval my_blue='$FG[032]'
 eval my_orange='$FG[214]'
 
 # right prompt
 NTTY=$(echo $TTY | egrep -o "\w+$")
-RPROMPT='$my_gray%n@%m($NTTY)%{$reset_color%}%'
+RPROMPT='%{$reset_color%}%n@%m($NTTY)%{$reset_color%}%'
 
 # git settings
 ZSH_THEME_GIT_PROMPT_PREFIX="$FG[075](branch:"

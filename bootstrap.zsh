@@ -10,7 +10,7 @@ ZSH_THEME=$ZSH_CUSTOM_THEME
 
 # define custom plugins to load
 [[ -z $ZSH_CUSTOM_PLUGINS ]] && 
-	ZSH_CUSTOM_PLUGINS=(git git-extras symfony2 composer colorize command-not-found nyan lol)
+	ZSH_CUSTOM_PLUGINS=(git git-extras symfony2 composer colorize command-not-found nyan lol zsh-syntax-highlighting)
 
 # load custom plugins
 zload_plugins $ZSH_CUSTOM_PLUGINS

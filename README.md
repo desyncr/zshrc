@@ -1,4 +1,4 @@
-ZSH-CUSTOM
+.zshrc
 ==========
 
 Repository to save my custom ZSH settings and themes.

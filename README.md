@@ -7,28 +7,31 @@ Install
 -------
 * Install [Antigen](https://github.com/zsh-users/antigen) somewhere:
 
-        cd ~/antigen/
+        mkdir ~/.antigen/ && cd ~/.antigen/
         curl https://raw.github.com/zsh-users/antigen/master/antigen.zsh > antigen.zsh
 
-* Clone the repo somewhere:
+* Clone this repo somewhere:
 
         cd ~
         git clone git@github.com:asphxia/zsh-custom.git
-        export ZSH_CUSTOM=~/zsh-custom``
 
 * Hook it into .zshrc
 
-        echo "export ANTIGEN=(path to antigen)" >> ~/.zshrc # exports Antigen path
-        echo "source $ZSH_CUSTOM/bootstrap.zsh" >> ~/.zshrc # loads out stuff
+        echo "export ANTIGEN=~/.antigen/" >> ~/.zshrc # exports Antigen path
+        echo "source ~/zsh-custom/bootstrap.zsh" >> ~/.zshrc # loads out stuff
 
-* If you run into problems with themes or the prompt:
+* Restart zsh and done!
 
-        sed -i "s/prompt /#prompt /g" ~/.zshrc
 
 Configure
 ---------
-
+
 Check ``bootstrap.zsh`` for examples and default configuration.
+
+If you run into problems with themes or the prompt run the following command and restart the shell:
+
+    sed -i "s/prompt /#prompt /g" ~/.zshrc
+
 
 Customize
 -------

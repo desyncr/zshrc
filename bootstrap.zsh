@@ -1,6 +1,9 @@
 [[ -z $ANTIGEN ]] && echo 'export ANTIGEN=(path to antigen)' && return 1
 [[ -z $ZSH_CUSTOM ]] && ZSH_CUSTOM=$(dirname $(readlink -f $0))
 
+# Fix default zstyle for tab completion
+zstyle ':completion:*' format ''
+
 # Load antigen library
 source $ANTIGEN/antigen.zsh
 source $ZSH_CUSTOM/.antigenrc

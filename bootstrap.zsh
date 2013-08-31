@@ -10,10 +10,11 @@ ZSH_THEME=$ZSH_CUSTOM_THEME
 
 # define custom plugins to load
 [[ -z $ZSH_CUSTOM_PLUGINS ]] && 
-	ZSH_CUSTOM_PLUGINS=(git git-extras symfony2 composer colorize command-not-found nyan lol zsh-syntax-highlighting)
+	ZSH_CUSTOM_PLUGINS=(git git-extras github bundler symfony2 composer command-not-found zsh-syntax-highlighting per-directory-history)
 
 # load custom plugins
 zload_plugins $ZSH_CUSTOM_PLUGINS
 
 # load autojump
 [[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
+

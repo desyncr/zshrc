@@ -5,6 +5,7 @@ alias lt="ls -lthr "
 alias df="df -h "
 alias psgrep="ps aux | grep "
 alias vlc=" vlc "
+alias vnull="vim -u /dev/null "
 
 # custom shortcuts
 alias dlist="dumpr.sh --list=list"

@@ -1,20 +1,15 @@
-# load zsh custom sources
-MYZSH=$ZSH_CUSTOM
-source $MYZSH/functions.sh
-source $MYZSH/aliases.sh
-source $MYZSH/lib/*.sh
+[[ -z $ANTIGEN ]] && echo 'export ANTIGEN=(path to antigen)' && return 1
+[[ -z $ZSH_CUSTOM ]] && ZSH_CUSTOM=$(dirname $(readlink -f $0))
 
-# load custom theme
-[[ -z $ZSH_CUSTOM_THEME ]] && ZSH_CUSTOM_THEME='af-magic-mod'
-ZSH_THEME=$ZSH_CUSTOM_THEME
+# Load antigen library
+source $ANTIGEN/antigen.zsh
+source $ZSH_CUSTOM/.antigenrc
 
-# define custom plugins to load
-[[ -z $ZSH_CUSTOM_PLUGINS ]] && 
-	ZSH_CUSTOM_PLUGINS=(git git-extras github bundler symfony2 composer command-not-found zsh-syntax-highlighting per-directory-history)
+# Load zsh custom sources
+[[ -e $ZSH_CUSTOM/functions.sh ]] && source $ZSH_CUSTOM/functions.sh
+[[ -e $ZSH_CUSTOM/aliases.sh ]]   && source $ZSH_CUSTOM/aliases.sh
+[[ -e $ZSH_CUSTOM/lib/*.sh ]]     && source $ZSH_CUSTOM/lib/*.sh
 
-# load custom plugins
-zload_plugins $ZSH_CUSTOM_PLUGINS
-
-# load autojump
+# Load autojump
 [[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
 

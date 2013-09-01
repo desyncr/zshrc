@@ -1,5 +1,4 @@
 [[ -z $ANTIGEN ]] && echo 'export ANTIGEN=(path to antigen)' && return 1
-[[ -z $ZSH_CUSTOM ]] && ZSH_CUSTOM=$(dirname $(readlink -f $0))
 
 # Fix default zstyle for tab completion
 zstyle ':completion:*' format ''

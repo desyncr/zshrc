@@ -3,6 +3,7 @@
 
 # Fix default zstyle for tab completion
 zstyle ':completion:*' format ''
+zstyle ':completion:*' menu select auto
 
 # Load antigen library
 source $ANTIGEN/antigen.zsh

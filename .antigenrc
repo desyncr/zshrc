@@ -5,6 +5,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle git-extras
 antigen bundle github
+antigen bundle capistrano
 antigen bundle command-not-found
 antigen bundle per-directory-history
 

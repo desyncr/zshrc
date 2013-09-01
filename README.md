@@ -13,12 +13,17 @@ Install
 * Clone this repo somewhere:
 
         cd ~
-        git clone git@github.com:asphxia/zsh-custom.git
+        git clone git@github.com:asphxia/zsh.git
 
 * Hook it into .zshrc
 
         echo "export ANTIGEN=~/.antigen/" >> ~/.zshrc # exports Antigen path
         echo "source ~/zsh-custom/bootstrap.zsh" >> ~/.zshrc # loads out stuff
+
+* Alternatively, use my .zshrc:
+
+        mv ~/.zshrc ~/.zshrc$(date +%s)
+        ln -s ~/zsh/.zshrc
 
 * Restart zsh and done!
 
@@ -54,4 +59,4 @@ The project is licensed under the [GNU GPL v3][2] ([tldr][3]) license. Which mea
   [1]: https://github.com/asphxia/zshrc/
   [2]: http://www.gnu.org/licenses/gpl.html
   [3]: http://www.tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)
-  
+

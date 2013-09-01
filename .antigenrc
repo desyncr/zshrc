@@ -7,7 +7,7 @@ antigen bundle git-extras
 antigen bundle github
 antigen bundle capistrano
 antigen bundle command-not-found
-antigen bundle per-directory-history
+antigen bundle jimhester/per-directory-history
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting

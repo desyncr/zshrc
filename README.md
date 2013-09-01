@@ -18,11 +18,11 @@ Install
 * Hook it into .zshrc
 
         echo "export ANTIGEN=~/.antigen/" >> ~/.zshrc # exports Antigen path
-        echo "source ~/zsh-custom/bootstrap.zsh" >> ~/.zshrc # loads out stuff
+        echo "source ~/zsh/bootstrap.zsh" >> ~/.zshrc # loads out stuff
 
 * Alternatively, use my .zshrc:
 
-        mv ~/.zshrc ~/.zshrc$(date +%s)
+        mv ~/.zshrc ~/.zshrc.$(date +%s)
         ln -s ~/zsh/.zshrc
 
 * Restart zsh and done!
@@ -30,7 +30,7 @@ Install
 
 Configure
 ---------
-
+
 Check ``bootstrap.zsh`` for examples and default configuration.
 
 If you run into problems with themes or the prompt run the following command and restart the shell:

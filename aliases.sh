@@ -10,11 +10,10 @@ alias vnull="vim -u /dev/null "
 # custom shortcuts
 alias dlist="dumpr.sh --list=list"
 alias turl="curl --socks5-hostname 127.0.0.1:9050 "
-alias subl="subl &>/dev/null & "
+
 # git
-alias gc="git commit -m "
+alias gc="git commit"
 alias gs="git status"
-alias git="hub"
 
 # zsh related
 alias zcustom="vim $ZSH_CUSTOM/custom.sh"

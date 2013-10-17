@@ -12,8 +12,8 @@ alias dlist="dumpr.sh --list=list"
 alias turl="curl --socks5-hostname 127.0.0.1:9050 "
 
 # git
-alias gc="git commit"
 alias gs="git status"
+#alias git="hub"
 
 # zsh related
 alias zcustom="vim $ZSH_CUSTOM/custom.sh"

@@ -14,7 +14,7 @@ time_disabled="%{$fg[green]%}%*%{$reset_color%}"
 time=$time_enabled
 
 # primary prompt
-PROMPT='$FG[237]------------------------------------------------------------%{$reset_color%}
+PROMPT='$FG[237]%{$reset_color%}
 $FG[032]%~\
 $(git_prompt_info) \
 $FG[105]%(!.#.»)%{$reset_color%}

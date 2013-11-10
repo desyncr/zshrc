@@ -10,6 +10,7 @@ alias vnull="vim -u /dev/null "
 # custom shortcuts
 alias dlist="dumpr.sh --list=list"
 alias turl="curl --socks5-hostname 127.0.0.1:9050 "
+alias phpup="php -S 127.0.0.1:9000"
 
 # git
 alias gs="git status"

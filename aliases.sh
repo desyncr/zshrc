@@ -6,14 +6,19 @@ alias df="df -h "
 alias psgrep="ps aux | grep "
 alias vlc=" vlc "
 alias vnull="vim -u /dev/null "
+alias v="vim "
+alias pwgen='< /dev/urandom tr -dc A-Za-z0-9\\?!=-_ | head -c13'
+alias :q="exit"
+alias todo="vim ~/Projects/notes"
 
 # custom shortcuts
 alias dlist="dumpr.sh --list=list"
 alias turl="curl --socks5-hostname 127.0.0.1:9050 "
-alias phpup="php -S 127.0.0.1:9000"
+alias phpup="php -S 127.0.0.1:9001"
 
 # git
 alias gs="git status"
+alias shipit="gp origin master"
 #alias git="hub"
 
 # zsh related

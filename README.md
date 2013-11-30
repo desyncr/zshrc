@@ -28,6 +28,16 @@ Install
 * Restart zsh and done!
 
 
+Optional
+--------
+
+* Install autojump
+
+        git clone git://github.com/joelthelion/autojump.git
+        cd autojump
+        ./install.sh
+
+
 Configure
 ---------
 

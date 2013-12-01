@@ -20,3 +20,16 @@ dladd() {
 tophistory() {
   history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head -n 30
 }
+
+cdl() {
+  if [[ -d "$1" ]]; then
+    cd "$1"
+    ls -l
+  else
+    echo "cl: '$1': Directory not found"
+  fi
+}
+
+calc() {
+      echo "scale=3;$@" | bc -l
+}

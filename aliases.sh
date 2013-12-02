@@ -19,6 +19,7 @@ alias phpup="php -S 127.0.0.1:9001"
 
 # git
 alias gs="git status"
+alias gd="git difftool "
 alias shipit="gp origin master"
 #alias git="hub"
 

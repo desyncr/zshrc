@@ -1,6 +1,7 @@
 [[ -z $ANTIGEN ]] && echo 'export ANTIGEN=(path to antigen)' && return 1
 
 export HISTORY_BASE=~/.config/directory_history
+export CDL_LS_PARAMS='-l'
 
 # Fix default zstyle for tab completion
 zstyle ':completion:*' format ''

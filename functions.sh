@@ -21,15 +21,23 @@ tophistory() {
   history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head -n 30
 }
 
-cdl() {
+c() {
+  if [ -z $CDL_LS_PARAMS ]; then
+      LS_PARAMS=$2
+  fi
+
   if [[ -d "$1" ]]; then
     cd "$1"
-    ls -l
+    ls $CDL_LS_PARAMS
   else
-    echo "cl: '$1': Directory not found"
+    echo "c: '$1': Directory not found"
   fi
 }
 
 calc() {
       echo "scale=3;$@" | bc -l
+}
+
+service() {
+    sudo /etc/init.d/$1 $2
 }

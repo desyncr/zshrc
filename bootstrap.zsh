@@ -1,5 +1,7 @@
 [[ -z $ANTIGEN ]] && echo 'export ANTIGEN=(path to antigen)' && return 1
 
+export HISTORY_BASE=~/.config/directory_history
+
 # Fix default zstyle for tab completion
 zstyle ':completion:*' format ''
 zstyle ':completion:*' menu select auto

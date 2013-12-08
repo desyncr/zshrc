@@ -21,7 +21,7 @@ tophistory() {
   history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head -n 30
 }
 
-c() {
+_c() {
   if [ -z $CDL_LS_PARAMS ]; then
       LS_PARAMS=$2
   fi
@@ -33,6 +33,7 @@ c() {
     echo "c: '$1': Directory not found"
   fi
 }
+alias c=_c
 
 calc() {
       echo "scale=3;$@" | bc -l
@@ -40,4 +41,16 @@ calc() {
 
 service() {
     sudo /etc/init.d/$1 $2
+}
+
+search() {
+    arg=()
+    if [ ! -z "$2" ]; then
+        arg+=(-name $1)
+        pattern=$2
+    else
+        pattern=$1
+    fi
+
+    /usr/bin/find ${arg[@]} -type f -exec grep -Hin1 "$pattern" {} \;
 }

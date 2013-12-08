@@ -11,6 +11,7 @@ alias pwgen='< /dev/urandom tr -dc A-Za-z0-9\\?!=-_ | head -c13'
 alias :q="exit"
 alias todo="vim ~/Dropbox/Projects/notes"
 alias apt="sudo aptitude "
+alias reboot="sudo shutdown -r now"
 
 # custom shortcuts
 alias dlist="dumpr.sh --list=list"

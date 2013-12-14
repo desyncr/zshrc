@@ -9,9 +9,10 @@ alias vnull="vim -u /dev/null "
 alias v="vim "
 alias pwgen='< /dev/urandom tr -dc A-Za-z0-9\\?!=-_ | head -c13'
 alias :q="exit"
-alias todo="vim ~/Dropbox/Projects/notes"
+alias todo="vim ~/Projects/notes/todo"
 alias apt="sudo aptitude "
 alias reboot="sudo shutdown -r now"
+alias mutt="mutt -R"
 
 # custom shortcuts
 alias dlist="dumpr.sh --list=list"

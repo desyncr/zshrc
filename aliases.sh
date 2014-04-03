@@ -1,7 +1,7 @@
 # shortcuts
 alias mkdir="mkdir -p "
-alias ll="ls -lShr "
-alias lt="ls -lthr "
+alias ll="ls -lShra "
+alias lt="ls -lthra "
 alias df="df -h "
 alias psgrep="ps aux | grep "
 alias vlc=" vlc "

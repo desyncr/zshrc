@@ -18,6 +18,7 @@ alias mutt="mutt -R"
 alias dlist="dumpr.sh --list=list"
 alias turl="curl --socks5-hostname 127.0.0.1:9050 "
 alias phpup="php -S 127.0.0.1:9001"
+alias vreboot="vagrant destroy -f && vagrant up"
 
 # git
 alias gs="git status"

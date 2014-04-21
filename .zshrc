@@ -38,6 +38,7 @@ export ANTIGEN=~/.antigen/
 source $ZSH_CUSTOM/bootstrap.zsh
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -e ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 
 export EDITOR='vim'
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc

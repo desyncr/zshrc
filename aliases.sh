@@ -1,7 +1,7 @@
 # shortcuts
 alias mkdir="mkdir -p "
-alias ll="ls -lShr "
-alias lt="ls -lthr "
+alias ll="ls -lShra "
+alias lt="ls -lthra "
 alias df="df -h "
 alias psgrep="ps aux | grep "
 alias vlc=" vlc "
@@ -23,6 +23,7 @@ alias vreboot="vagrant destroy -f && vagrant up"
 # git
 alias gs="git status"
 alias gd="git difftool "
+alias gl="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 alias shipit="gp origin master"
 #alias git="hub"
 

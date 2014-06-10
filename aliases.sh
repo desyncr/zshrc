@@ -7,6 +7,7 @@ alias psgrep="ps aux | grep "
 alias vlc=" vlc "
 alias vnull="vim -u /dev/null "
 alias v="vim "
+alias vi="vim -u ~/Projects/vimrc/essential.vim"
 alias pwgen='< /dev/urandom tr -dc A-Za-z0-9\\?!=-_ | head -c13'
 alias :q="exit"
 alias todo="vim ~/Projects/notes/todo"

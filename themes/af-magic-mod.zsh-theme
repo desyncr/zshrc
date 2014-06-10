@@ -14,7 +14,7 @@ time_disabled="%{$fg[green]%}%*%{$reset_color%}"
 time=$time_enabled
 
 # ranger info
-if [[ $RANGER -eq 1 ]]; then RANGERPROMPT='(ranger)'; else RANGERPROMPT=''; fi
+if [ -n "$RANGER_LEVEL" ]; then RANGERPROMPT='(ranger)'; else RANGERPROMPT=''; fi
 
 # primary prompt
 PROMPT='$FG[237]%{$reset_color%}$FG[032]%~\

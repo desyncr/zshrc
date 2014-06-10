@@ -13,10 +13,13 @@ time_enabled="%(?.%{$fg[green]%}.%{$fg[red]%})%*%{$reset_color%}"
 time_disabled="%{$fg[green]%}%*%{$reset_color%}"
 time=$time_enabled
 
+# ranger info
+if [[ $RANGER -eq 1 ]]; then RANGERPROMPT='(ranger)'; else RANGERPROMPT=''; fi
+
 # primary prompt
 PROMPT='$FG[237]%{$reset_color%}$FG[032]%~\
-$(git_prompt_info) \
-$FG[105]%(!.#.»)%{$reset_color%}
+$(git_prompt_info)\
+%{$reset_color%}$RANGERPROMPT $FG[105]%(!.#.»)%{$reset_color%}
 $ '
 PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
 RPS1='${return_code}'

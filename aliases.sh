@@ -8,7 +8,7 @@ alias vlc=" vlc "
 alias vnull="vim -u /dev/null "
 alias v="vim "
 alias vi="vim -u ~/Projects/vimrc/essential.vim"
-alias pwgen='< /dev/urandom tr -dc A-Za-z0-9\\?!=-_ | head -c13'
+alias pwgen="< /dev/urandom tr -dc 'A-Za-z0-9\\?!=-_' | head -c13"
 alias :q="exit"
 alias todo="vim ~/Projects/notes/todo"
 alias apt="sudo aptitude "
@@ -19,7 +19,10 @@ alias mutt="mutt -R"
 alias dlist="dumpr.sh --list=list"
 alias turl="curl --socks5-hostname 127.0.0.1:9050 "
 alias phpup="php -S 127.0.0.1:9001"
-alias vreboot="vagrant destroy -f && vagrant up"
+alias vagrant_reboot="vagrant destroy -f && vagrant up"
+
+alias pingoogle="ping 8.8.8.8"
+alias restart_network="sudo ifconfig eth0 down && sudo ifconfig eth0 up"
 
 # git
 alias gs="git status"

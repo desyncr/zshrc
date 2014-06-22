@@ -28,7 +28,7 @@ alias restart_network="sudo ifconfig eth0 down && sudo ifconfig eth0 up"
 alias gs="git status"
 alias gd="git difftool "
 alias gl="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
-alias shipit="gp origin master"
+alias ship="gp origin master"
 #alias git="hub"
 
 # zsh related

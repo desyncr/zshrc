@@ -42,4 +42,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export EDITOR='vim'
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
-source ~/.fzf.zsh
+[[ -e ~/.fzf.zsh ]] && source ~/.fzf.zsh

@@ -13,7 +13,10 @@ source $ZSH_CUSTOM/.antigenrc
 
 # Load zsh custom sources
 [[ -e $ZSH_CUSTOM/functions.sh ]] && source $ZSH_CUSTOM/functions.sh
-[[ -e $ZSH_CUSTOM/aliases.sh ]]   && source $ZSH_CUSTOM/aliases.sh
+for file in $(ls $ZSH_CUSTOM/aliases.*); do
+    source $file
+done
+
 [[ -e $ZSH_CUSTOM/lib/*.sh ]]     && source $ZSH_CUSTOM/lib/*.sh
 
 # Load autojump

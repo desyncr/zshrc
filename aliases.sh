@@ -24,7 +24,8 @@ alias psqlr='/usr/local/pgsql/bin/psql -U smdev -d saludmovil'
 
 alias pingoogle="ping 8.8.8.8"
 alias restart_network="sudo ifconfig eth0 down && sudo ifconfig eth0 up"
-alias externip='lynx --dump http://ipecho.net/plain'
+alias externip='curl ifconfig.me'
+#alias externip='wget -qO- http://ipecho.net/plain'
 
 # git
 alias gs="git status"

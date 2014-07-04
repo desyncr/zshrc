@@ -11,7 +11,7 @@ antigen bundles <<EOBUNDLES
   # Tools of the trade
   gem
   composer
-  bundler
+  #bundler
   symfony2
   capistrano
 

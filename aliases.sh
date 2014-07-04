@@ -14,6 +14,7 @@ alias todo="vim ~/Projects/notes/todo"
 alias apt="sudo aptitude "
 alias reboot="sudo shutdown -r now"
 alias mutt="mutt -R"
+alias forls="IFS=\$'\n'"
 
 # custom shortcuts
 alias dlist="dumpr.sh --list=list"

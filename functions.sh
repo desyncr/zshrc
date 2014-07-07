@@ -43,6 +43,7 @@ service() {
     sudo /etc/init.d/$1 $2
 }
 
+# search keyword [path]
 search() {
     arg=()
     if [ ! -z "$2" ]; then
@@ -64,4 +65,31 @@ updateadblock() {
     curl http://someonewhocares.org/hosts/zero/hosts -o /tmp/adblock 2> /dev/null
     sudo mv /tmp/adblock /etc/hosts.d/adblock
     updatehosts
+}
+
+# upto user@example.com example.zip ['~']
+# upto staging example.zip ['~']
+# rsync -v example.zip user@example.com:~
+upto() {
+    ssh=$1
+    local_file=$2
+    remote_path='~'
+    if [ ! -z "$3" ]; then
+        remote_path="$3"
+    fi
+    rsync -v $local_file $ssh:$remote_path
+}
+
+# sources a given set of files
+# usage:
+#    load file|regexp|path root
+load() {
+    regexp="$1"
+    root="$PWD"
+    if [ ! -z "$2" ]; then
+        root="$2"
+    fi
+    for f in $(find $root -print | grep "$regexp" | sort); do
+        source "$f"
+    done
 }

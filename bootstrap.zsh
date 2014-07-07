@@ -2,6 +2,7 @@
 
 export HISTORY_BASE=~/.config/directory_history
 export CDL_LS_PARAMS='-l'
+#export IFS=$'\n'
 
 # Fix default zstyle for tab completion
 zstyle ':completion:*' format ''
@@ -12,13 +13,12 @@ source $ANTIGEN/antigen.zsh
 source $ZSH_CUSTOM/.antigenrc
 
 # Load zsh custom sources
-[[ -e $ZSH_CUSTOM/functions.sh ]] && source $ZSH_CUSTOM/functions.sh
-for file in $(ls $ZSH_CUSTOM/aliases.*); do
-    source $file
-done
-
-[[ -e $ZSH_CUSTOM/lib/*.sh ]]     && source $ZSH_CUSTOM/lib/*.sh
+source $ZSH_CUSTOM/functions.sh
+cd "$ZSH_CUSTOM"
+    load "functions..*.sh" # sources any local functions files (functions.local.sh)
+    load "aliases.*.sh"    # sources all aliases files
+    load "lib/.*.sh"       # sources all libs
+cd -
 
 # Load autojump
-[[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
-
+load "autojump.zsh" "$HOME/.autojump/etc/profile.d/"

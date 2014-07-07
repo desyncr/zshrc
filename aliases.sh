@@ -15,6 +15,7 @@ alias apt="sudo aptitude "
 alias reboot="sudo shutdown -r now"
 alias mutt="mutt -R"
 alias forls="IFS=\$'\n'"
+alias pipes="~/Playground/pipes.sh"
 
 # custom shortcuts
 alias dlist="dumpr.sh --list=list"
@@ -27,6 +28,7 @@ alias pingoogle="ping 8.8.8.8"
 alias restart_network="sudo ifconfig eth0 down && sudo ifconfig eth0 up"
 alias externip='curl ifconfig.me'
 #alias externip='wget -qO- http://ipecho.net/plain'
+alias postfix_clear='sudo postsuper -d ALL'
 
 # git
 alias gs="git status"

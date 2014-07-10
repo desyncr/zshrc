@@ -93,3 +93,25 @@ load() {
         source "$f"
     done
 }
+
+psg() {
+    regexp="$@"
+    kill=0
+    for p in $@; do
+        case $p in
+        '--kill')
+            kill=1
+            regexp=$(echo $regexp | sed 's/--kill//g')
+        ;;
+        esac
+    done
+
+    psargs='%p %a'
+    if [ $kill -eq 0 ]; then
+        ps axo $psargs | grep -v grep | grep "$regexp"
+    else
+        for pid in $(ps axo $psargs | grep -v grep | grep "$regexp" | sed 's/^ //g' | cut -d' ' -f1); do
+            kill $pid
+        done
+    fi
+}

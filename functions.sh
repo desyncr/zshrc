@@ -80,6 +80,18 @@ upto() {
     rsync -v $local_file $ssh:$remote_path
 }
 
+# dlfrom user@example.com /tmp/files.tar ['.']
+# rsync -v user@example.com:/tmp/files.tar .
+dlfrom () {
+    ssh=$1
+    remote_file=$2
+    local_path='.'
+    if [ ! -z "$3" ]; then
+        local_path="$3"
+    fi
+    rsync -v $ssh:$remote_file $local_path
+}
+
 # sources a given set of files
 # usage:
 #    load file|regexp|path root

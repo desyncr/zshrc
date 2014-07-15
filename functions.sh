@@ -101,9 +101,11 @@ load() {
     if [ ! -z "$2" ]; then
         root="$2"
     fi
-    for f in $(find $root -print | grep "$regexp" | sort); do
-        source "$f"
-    done
+    if [ -e "$root" ]; then
+        for f in $(find $root -print | grep "$regexp" | sort); do
+            source "$f"
+        done
+    fi
 }
 
 psg() {

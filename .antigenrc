@@ -21,7 +21,7 @@ antigen bundles <<EOBUNDLES
   tmux
 
   # Meta
-  tmuxinator
+  #tmuxinator
   command-not-found
   jimhester/per-directory-history
   zsh-users/zsh-syntax-highlighting

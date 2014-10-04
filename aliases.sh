@@ -39,6 +39,8 @@ alias gl="git log --graph --abbrev-commit --decorate --date=relative --format=fo
 alias ship="gp origin master"
 alias gS="gp origin master"
 #alias git="hub"
+alias gsync='git fetch origin && git pull origin master'
+alias gsq='git rebase -i HEAD~2'
 
 # zsh related
 alias zcustom="vim $ZSH_CUSTOM/custom.sh"

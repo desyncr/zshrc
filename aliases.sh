@@ -16,6 +16,7 @@ alias reboot="sudo shutdown -r now"
 alias mutt="mutt -R"
 alias forls="IFS=\$'\n'"
 alias pipes="~/Playground/pipes.sh"
+alias diskusage='du -hd1|sort -h'
 
 # custom shortcuts
 alias dlist="dumpr.sh --list=list"

@@ -11,8 +11,10 @@ alias admin='cd /var/www/admin/development/trunk/'
 alias serverup='/home/dario/Workspace/infrastructure/serverup/serverup'
 
 alias db='psql -U fw -d fw-dev-dc -h 10.30.100.42'
+alias db='psql -U fw -d fw -h 127.0.0.1'
 export GIT_EDITOR=vim
 export VISUAL=vim
 export EDITOR=vim
 
 alias behat='bin/behat --config app/behat.yml --tags '
+alias greset="git reset --hard HEAD && git checkout upstream/master && git pull && git branch -D master && git checkout -b master"

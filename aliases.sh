@@ -41,7 +41,7 @@ alias ship="gp origin master"
 alias gS="gp origin master"
 #alias git="hub"
 alias gsync='git checkout master && git fetch origin && git pull origin master'
-alias gsq='git rebase -i HEAD~2'
+alias squash='git add . && gc -m "[squash]" && git rebase -i HEAD~2'
 
 # zsh related
 alias zcustom="vim $ZSH_CUSTOM/custom.sh"

@@ -2,13 +2,13 @@
 # ------------------
 unalias fzf 2> /dev/null
 fzf() {
-  /usr/bin/ruby --disable-gems /home/dario/Playground/fzf/fzf "$@"
+  /usr/bin/ruby --disable-gems /usr/local/bin/fzf/fzf "$@"
 }
 export -f fzf > /dev/null
 
 # Auto-completion
 # ---------------
-# [[ $- =~ i ]] && source /home/dario/Playground/fzf/fzf-completion.zsh
+# [[ $- =~ i ]] && source /usr/local/bin/fzf/fzf-completion.zsh
 
 # Key bindings
 # ------------
@@ -52,8 +52,8 @@ fzf-cd-widget() {
           -o -type d -print 2> /dev/null | fzf):-.}"
   zle reset-prompt
 }
-zle     -N    fzf-cd-widget
-bindkey '\ec' fzf-cd-widget
+#zle     -N    fzf-cd-widget
+#bindkey '\ec' fzf-cd-widget
 
 # CTRL-T - Paste the selected command from history into the command line
 fzf-history-widget() {

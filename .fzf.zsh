@@ -57,10 +57,8 @@ fzf-cd-widget() {
 
 # CTRL-T - Paste the selected command from history into the command line
 fzf-history-widget() {
-  _per-directory-history-set-global-history
   LBUFFER=$(fc -l 1 | fzf +s +m -n..,1,2.. | sed "s/ *[0-9*]* *//")
   zle redisplay
-  _per-directory-history-set-directory-history
 }
 zle     -N   fzf-history-widget
 bindkey '^T' fzf-history-widget

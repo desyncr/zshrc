@@ -38,6 +38,13 @@ Optional
         cd autojump
         ./install.sh
 
+* Install fzf
+
+        git clone https://github.com/junegunn/fzf.git ~/.fzf
+        ~/.fzf/install
+
+        rm ~/.fzf.zsh
+        ln ~/.zshrc/.fzf.zsh ~/.fzf.zsh
 
 Configure
 ---------

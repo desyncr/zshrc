@@ -48,7 +48,7 @@ alias zcustom="vim $ZSH_CUSTOM/custom.sh"
 alias zalias="vim $ZSH_CUSTOM/aliases.sh"
 alias zfunctions="vim $ZSH_CUSTOM/functions.sh"
 
-if ! which pbcopy >/dev/null && which xsel >/dev/null; then
+if ! which pbcopy &>/dev/null && which xsel &>/dev/null; then
     alias pbcopy='xsel --clipboard --input'
     alias pbpaste='xsel --clipboard --output'
 fi

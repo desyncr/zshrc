@@ -45,7 +45,7 @@ export EDITOR='vim'
 [[ -e ~/.fzf.zsh ]] && source ~/.fzf.zsh
 
 export PHPBREW_SET_PROMPT=1
-source $HOME/.phpbrew/bashrc
+[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 export GIT_EDITOR=vim
 export VISUAL=vim
 export EDITOR=vim

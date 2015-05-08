@@ -13,18 +13,18 @@ Install
 
 * Clone this repo somewhere:
 
-        cd ~
-        git clone git@github.com:desyncr/zshrc.git
+        mkdir ~/.zshrc.d && cd ~/.zshrc.d
+        git clone git@github.com:desyncr/zshrc.git .
 
 * Hook it into .zshrc
 
         echo "export ANTIGEN=~/.antigen/" >> ~/.zshrc # exports Antigen path
-        echo "source ~/zshrc/bootstrap.zsh" >> ~/.zshrc # loads out stuff
+        echo "source ~/.zshrc.d/bootstrap.zsh" >> ~/.zshrc # loads out stuff
 
 * Alternatively, use my .zshrc:
 
         mv ~/.zshrc ~/.zshrc.$(date +%s)
-        ln -s ~/zshrc/.zshrc
+        ln -s ~/.zshrc.d/.zshrc
 
 * Restart zsh and done!
 

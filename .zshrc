@@ -37,7 +37,7 @@ export ANTIGEN=~/.antigen/
 [[ -z $ZSH_CUSTOM ]] && ZSH_CUSTOM=$(dirname $(readlink -f ~/.zshrc))
 source $ZSH_CUSTOM/bootstrap.zsh
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -e ~/.rvm/bin ]] && PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -e ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 
 # use 'echo prefix = ~/.node >> ~/.npmrc' to configure npm bin path

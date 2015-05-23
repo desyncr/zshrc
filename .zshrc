@@ -40,6 +40,9 @@ source $ZSH_CUSTOM/bootstrap.zsh
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -e ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 
+# use 'echo prefix = ~/.node >> ~/.npmrc' to configure npm bin path
+[[ -e ~/.node/bin ]] && PATH=$PATH:$HOME/.node/bin
+
 export EDITOR='vim'
 [[ -e ~/.fzf.zsh ]] && source ~/.fzf.zsh
 

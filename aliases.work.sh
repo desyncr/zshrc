@@ -1,4 +1,5 @@
 alias vagrant_reboot="vagrant destroy -f && vagrant up"
+alias vrestart="vagrant halt && vagrant up"
 alias psqlr='/usr/local/pgsql/bin/psql -U smdev -d saludmovil'
 
 alias pingoogle="ping 8.8.8.8"

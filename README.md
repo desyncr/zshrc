@@ -16,7 +16,7 @@ Install
 
 * Hook the new .zshrc:
 
-        [[ ~/.zshrc ]] && mv ~/.zshrc ~/.zshrc.$(date +%s)
+        [[ -e ~/.zshrc ]] && mv ~/.zshrc ~/.zshrc.$(date +%s)
         ln -s ~/.zshrc.d/.zshrc ~
 
 * Alternatively, use it in your own .zshrc:

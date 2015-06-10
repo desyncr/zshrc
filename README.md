@@ -8,7 +8,7 @@ Install
 * Install [Antigen](https://github.com/zsh-users/antigen) somewhere:
 
         mkdir ~/.antigen/ && cd ~/.antigen/
-        curl -L https://raw.githubusercontent.com/zsh-users/antigen/master/antigen.zsh > antigen.zsh
+        git clone git@github.com:zsh-users/antigen.git .
         source antigen.zsh
 
 * Clone this repo somewhere:

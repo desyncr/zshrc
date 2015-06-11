@@ -6,22 +6,22 @@ antigen bundles <<EOBUNDLES
   # Git and github autocompletions and aliases
   git
   git-extras
-  bobthecow/git-flow-completion
+  #bobthecow/git-flow-completion
 
   # Tools of the trade
-  gem
-  composer
+  #gem
+  #composer
   #bundler
-  symfony2
-  capistrano
+  #symfony2
+  #capistrano
 
   # More tools
   vagrant
-  debian
-  tmux
+  #debian
+  #tmux
 
   # Meta
-  tmuxinator
+  #tmuxinator
   command-not-found
   jimhester/per-directory-history
   zsh-users/zsh-syntax-highlighting

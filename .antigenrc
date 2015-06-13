@@ -5,15 +5,10 @@ antigen use oh-my-zsh
 antigen bundles <<EOBUNDLES
   # Git and github autocompletions and aliases
   git
-  git-extras
-  #bobthecow/git-flow-completion
 
   # Tools of the trade
   #gem
-  #composer
   #bundler
-  #symfony2
-  #capistrano
 
   # More tools
   vagrant

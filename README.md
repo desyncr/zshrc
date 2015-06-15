@@ -7,24 +7,23 @@ Install
 -------
 * Install [Antigen](https://github.com/zsh-users/antigen) somewhere:
 
-        mkdir ~/.antigen/ && cd ~/.antigen/
-        curl -L https://raw.githubusercontent.com/zsh-users/antigen/master/antigen.zsh > antigen.zsh
-        source antigen.zsh
+        git clone git@github.com:zsh-users/antigen.git ~/.antigen
+        source ~/.antigen/antigen.zsh
 
 * Clone this repo somewhere:
 
-        mkdir ~/.zshrc.d && cd ~/.zshrc.d
-        git clone git@github.com:desyncr/zshrc.git .
+        git clone git@github.com:desyncr/zshrc.git ~/.zshrc.d
 
-* Hook it into .zshrc
+* Hook the new .zshrc:
+
+        [[ -e ~/.zshrc ]] && mv ~/.zshrc ~/.zshrc.$(date +%s)
+        ln -s ~/.zshrc.d/.zshrc ~
+
+* Alternatively, use it in your own .zshrc:
 
         echo "export ANTIGEN=~/.antigen/" >> ~/.zshrc # exports Antigen path
         echo "source ~/.zshrc.d/bootstrap.zsh" >> ~/.zshrc # loads out stuff
 
-* Alternatively, use my .zshrc:
-
-        mv ~/.zshrc ~/.zshrc.$(date +%s)
-        ln -s ~/.zshrc.d/.zshrc
 
 * Restart zsh and done!
 

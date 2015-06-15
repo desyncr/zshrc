@@ -33,7 +33,7 @@ export _ANTIGEN_CACHE_ENABLED=true
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$ANTIGEN/repos/https-COLON--SLASH--SLASH-github.com-SLASH-zsh-users-SLASH-zsh-syntax-highlighting.git/highlighters/
 
 [[ -z $ZSH_CUSTOM ]] && ZSH_CUSTOM=$(dirname $(readlink -f ~/.zshrc))
-source $HOME/.zshrc.d/bootstrap.zsh
+source $ZSH_CUSTOM/bootstrap.zsh
 
 #[[ -e ~/.rvm/bin ]] && PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 #[[ -e ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm

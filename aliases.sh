@@ -12,6 +12,8 @@ alias diskusage='du -hd1|sort -h'
 
 alias pingoogle="ping 8.8.8.8"
 
+alias serve="python -m SimpleHTTPServer"
+
 # git
 alias gs="git status"
 alias gC="ga . && gc -m "

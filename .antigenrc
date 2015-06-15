@@ -5,27 +5,21 @@ antigen use oh-my-zsh
 antigen bundles <<EOBUNDLES
   # Git and github autocompletions and aliases
   git
-  git-extras
-  bobthecow/git-flow-completion
+  #git-extras
 
   # Tools of the trade
-  gem
-  composer
   #bundler
-  symfony2
-  capistrano
 
   # More tools
-  vagrant
-  debian
-  tmux
+  #vagrant
+  #tmux
 
   # Meta
-  tmuxinator
-  command-not-found
+  #tmuxinator
+  #command-not-found
   jimhester/per-directory-history
   zsh-users/zsh-syntax-highlighting
-  colored-man
+  #colored-man
 
 EOBUNDLES
 
@@ -34,3 +28,4 @@ antigen theme desyncr/zshrc themes/af-magic-mod
 
 # Tell antigen that you're done.
 antigen apply
+

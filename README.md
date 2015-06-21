@@ -10,6 +10,8 @@ Install
         git clone git@github.com:zsh-users/antigen.git ~/.antigen
         source ~/.antigen/antigen.zsh
 
+* [Optional] Install powerline fonts. See section below.
+
 * Clone this repo somewhere:
 
         git clone git@github.com:desyncr/zshrc.git ~/.zshrc.d
@@ -54,6 +56,26 @@ If you run into problems with themes or the prompt run the following command and
 
     sed -i "s/prompt /#prompt /g" ~/.zshrc
 
+Powerline fonts
+-----------
+
+Installing Powerline fonts can be tricky sometimes. These steps worked for me. Taken from [here](https://github.com/cereda/f21-setup).
+
+Install powerline:
+
+    $ sudo dnf install powerline
+
+Install Powerline fonts from https://github.com/powerline/fonts:
+
+    $ wget https://github.com/powerline/fonts/archive/master.zip
+    $ unzip master.zip
+    $ cd fonts-master/
+    $ ./install.sh
+    $ sudo fc-cache -fsv ~/.fonts
+
+Remember to configure your terminal to set the defuault font to some powerline variant. Also remember to set the monospace font configured to powerline system-wide. On Gnome this can be done going to Tweak Tool -> Fonts.
+
+More info [here](https://powerline.readthedocs.org/en/latest/installation/linux.html#fonts-installation).
 
 Customize
 -------

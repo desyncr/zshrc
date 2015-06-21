@@ -52,3 +52,6 @@ export EDITOR=vim
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+

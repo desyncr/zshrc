@@ -73,7 +73,7 @@ Install Powerline fonts from https://github.com/powerline/fonts:
     $ ./install.sh
     $ sudo fc-cache -fsv ~/.fonts
 
-Remember to configure your terminal to set the defuault font to some powerline variant. Also remember to set the monospace font configured to powerline system-wide. On Gnome this can be done going to Tweak Tool -> Fonts.
+Remember to configure your terminal to set the default font to some powerline variant. Also remember to set the monospace font configured to powerline system-wide. On Gnome this can be done going to Tweak Tool -> Fonts.
 
 More info [here](https://powerline.readthedocs.org/en/latest/installation/linux.html#fonts-installation).
 

@@ -75,6 +75,8 @@ Install Powerline fonts from https://github.com/powerline/fonts:
 
 Remember to configure your terminal to set the default font to some powerline variant. Also remember to set the monospace font configured to powerline system-wide. On Gnome this can be done going to Tweak Tool -> Fonts.
 
+After powerline fonts are installed in order to actually use the theme you have to set ``ANTIGEN_POWERLINE`` environment variable to ``true``.
+
 More info [here](https://powerline.readthedocs.org/en/latest/installation/linux.html#fonts-installation).
 
 Customize
@@ -96,4 +98,3 @@ The project is licensed under the [GNU GPL v3][2] license.
 
   [1]: https://github.com/desyncr/zshrc/
   [2]: http://www.gnu.org/licenses/gpl.html
-

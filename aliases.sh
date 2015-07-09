@@ -1,8 +1,3 @@
-# not actual aliases
-export GIT_EDITOR=vim
-export VISUAL=vim
-export EDITOR=vim
-
 # shortcuts
 alias mkdir="mkdir -p "
 alias ll="ls -lShra "

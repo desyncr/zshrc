@@ -27,10 +27,9 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-# Load antigen and bootstrap the configuration
-export ANTIGEN=~/.antigen/
-export _ANTIGEN_CACHE_ENABLED=true
-export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$ANTIGEN/repos/https-COLON--SLASH--SLASH-github.com-SLASH-zsh-users-SLASH-zsh-syntax-highlighting.git/highlighters/
+# Fix default zstyle for tab completion
+zstyle ':completion:*' format ''
+zstyle ':completion:*' menu select auto
 
 [[ -z $ZSH_CUSTOM ]] && ZSH_CUSTOM=$(dirname $(readlink -f ~/.zshrc))
 source $ZSH_CUSTOM/bootstrap.zsh

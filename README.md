@@ -10,8 +10,6 @@ Install
         git clone git@github.com:zsh-users/antigen.git ~/.antigen
         source ~/.antigen/antigen.zsh
 
-* [Optional] Install powerline fonts. See section below.
-
 * Clone this repo somewhere:
 
         git clone git@github.com:desyncr/zshrc.git ~/.zshrc.d
@@ -46,6 +44,8 @@ Optional
 
         rm ~/.fzf.zsh
         ln ~/zshrc/.fzf.zsh ~/.fzf.zsh
+
+* Install powerline fonts. See section below.
 
 Configure
 ---------

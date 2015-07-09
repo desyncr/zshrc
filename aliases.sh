@@ -1,3 +1,8 @@
+# not actual aliases
+export GIT_EDITOR=vim
+export VISUAL=vim
+export EDITOR=vim
+
 # shortcuts
 alias mkdir="mkdir -p "
 alias ll="ls -lShra "
@@ -24,4 +29,3 @@ if ! which pbcopy &>/dev/null && which xsel &>/dev/null; then
     alias pbcopy='xsel --clipboard --input'
     alias pbpaste='xsel --clipboard --output'
 fi
-

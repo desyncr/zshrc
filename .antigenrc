@@ -1,26 +1,9 @@
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
-
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
+# Bundles
 antigen bundles <<EOBUNDLES
-  # Git and github autocompletions and aliases
-  git
-  #git-extras
-
-  # Tools of the trade
-  #bundler
-
-  # More tools
-  #vagrant
-  #tmux
-
-  # Meta
-  #tmuxinator
-  #command-not-found
   jimhester/per-directory-history
   zsh-users/zsh-syntax-highlighting
-  #colored-man
-
+  desyncr/vagrant-zsh-completion
+  felixr/docker-zsh-completion
 EOBUNDLES
 
 # Load the theme. Set ANTIGEN_POWERLINE to true to enable Powerline-based theme.

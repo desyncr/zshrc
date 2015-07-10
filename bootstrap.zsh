@@ -16,5 +16,5 @@ source $ZSH_CUSTOM/.antigenrc
 
 # Finally load alises
 cd "$ZSH_CUSTOM/lib"
-    load "aliases*.sh"
+    load "aliases.*.sh"
 cd - &> /dev/null

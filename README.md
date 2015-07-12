@@ -31,15 +31,12 @@ Install
 Optional
 --------
 
-* Install autojump
+* Install [autojump](https://github.com/joelthelion/autojump)
 
-        git clone git://github.com/joelthelion/autojump.git
-        cd autojump
-        ./install.sh
 
-* Install fzf
+* Install [fzf](https://github.com/junegunn/fzf)
 
-        git clone https://github.com/junegunn/fzf.git ~/.fzf
+        git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
         ~/.fzf/install
 
         rm ~/.fzf.zsh

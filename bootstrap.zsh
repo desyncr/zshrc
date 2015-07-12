@@ -10,9 +10,9 @@ cd $ZSH_CUSTOM
     load ".env.zsh"
 cd - &> /dev/null
 
-# Load antigen and bootstrap the configuration
-source $ANTIGEN/antigen.zsh
-source $ZSH_CUSTOM/.antigenrc
+# Load zpm and bootstrap the configuration
+source $ZPM/zpm.zsh
+source $ZSH_CUSTOM/.zpmrc
 
 # Finally load alises
 cd "$ZSH_CUSTOM/lib"

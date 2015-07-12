@@ -19,17 +19,11 @@ export HISTORY_BASE=~/.config/directory_history
 export CDL_LS_PARAMS='-l'
 #export IFS=$'\n'
 
-# Set up antigen path
-export ANTIGEN=~/.antigen/
+# Set up zpm path
+export ZPM=~/.zpm
 
-# Enable experimental cache feature
-export _ANTIGEN_CACHE_ENABLED=true
-
-# Enable (or not) ANTIGEN_POWERLINE themes
-export ANTIGEN_POWERLINE=${ANTIGEN_POWERLINE:-false}
-
-# Hack for command highlighting
-export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$ANTIGEN/repos/https-COLON--SLASH--SLASH-github.com-SLASH-zsh-users-SLASH-zsh-syntax-highlighting.git/highlighters/
+# Enable (or not) THEME_POWERLINE themes
+export THEME_POWERLINE=${THEME_POWERLINE:-false}
 
 # Powerline theme config
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)

@@ -1,6 +1,7 @@
 zpm ext desyncr/zpm-ext
 
 zpm install junegunn/fzf
+zpm load desyncr/hosts
 zpm load zsh-users/zsh-syntax-highlighting
 zpm theme desyncr/powerlevel9k powerlevel9k --branch=dritter/prezto
 

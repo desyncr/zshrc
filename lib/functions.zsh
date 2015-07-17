@@ -56,17 +56,6 @@ search() {
     /usr/bin/find ${arg[@]} -type f -exec grep -Hin1 "$pattern" {} \;
 }
 
-updatehosts() {
-    cat /etc/hosts.d/* > /tmp/hosts
-    sudo mv /tmp/hosts /etc/hosts
-}
-
-updateadblock() {
-    curl http://someonewhocares.org/hosts/zero/hosts -o /tmp/adblock 2> /dev/null
-    sudo mv /tmp/adblock /etc/hosts.d/adblock
-    updatehosts
-}
-
 # upto user@example.com example.zip ['~']
 # upto staging example.zip ['~']
 # rsync -v example.zip user@example.com:~

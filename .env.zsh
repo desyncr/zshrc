@@ -31,3 +31,8 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 export GIT_EDITOR=vim
 export VISUAL=vim
 export EDITOR=vim
+
+# Default theme requires OMZ
+export ZSH=$HOME/.zpm/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git
+export ZSH_CACHE_DIR=$ZSH/cache
+

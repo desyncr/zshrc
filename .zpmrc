@@ -1,8 +1,31 @@
-zpm ext desyncr/zpm-ext
+# zpm extensions
+zpm ext <<EXT
+    desyncr/zpm-ext cache # cache plugins and themes
+    desyncr/zpm-ext theme # install and load themes
+EXT
 
-zpm install junegunn/fzf
-zpm load desyncr/hosts
-zpm load zsh-users/zsh-syntax-highlighting
-zpm theme desyncr/powerlevel9k powerlevel9k --branch=dritter/prezto
+# install these tools
+zpm install <<INSTALL
+    junegunn/fzf        # fuzzy file finder - gem install curses
+    jeffkaufman/icdiff  # side-by-side diff viewer in the console
+INSTALL
 
+# load these plugins
+zpm load <<LOAD
+    desyncr/hosts                     # configures hosts and adblock
+    desyncr/git-config-icdiff         # configures icdiff as default git diff tool
+    zsh-users/zsh-syntax-highlighting # fish-like syntax highlighting
+LOAD
+
+# load theme
+if ( ! $THEME_POWERLINE ); then
+    # load omz and basic theme
+    zpm load robbyrussell/oh-my-zsh lib
+    zpm theme desyncr/zshrc themes/af-magic-mod
+else
+    # use powerline based theme - may or may not work based on system config (system fonts, console config)
+    zpm theme desyncr/powerlevel9k powerlevel9k --branch=dritter/prezto
+fi
+
+# apply completions and stuff
 zpm apply

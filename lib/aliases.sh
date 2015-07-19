@@ -20,6 +20,8 @@ alias gc="git commit"
 alias gC="ga . && gc -m "
 alias gd="git difftool "
 alias gp="git pull "
+alias ga="git add "
+alias gf="git fetch --all"
 alias gl="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all | tac"
 
 if ! which pbcopy &>/dev/null && which xsel &>/dev/null; then

@@ -8,6 +8,7 @@ EXT
 zpm install <<INSTALL
     junegunn/fzf        # fuzzy file finder - gem install curses
     jeffkaufman/icdiff  # side-by-side diff viewer in the console
+    pindexis/qfc bin
 INSTALL
 
 # load these plugins
@@ -15,6 +16,7 @@ zpm load <<LOAD
     desyncr/hosts                     # configures hosts and adblock
     desyncr/git-config-icdiff         # configures icdiff as default git diff tool
     zsh-users/zsh-syntax-highlighting # fish-like syntax highlighting
+    pindexis/qfc bin/qfc.sh
 LOAD
 
 # load theme

@@ -15,6 +15,6 @@ source $ZPM/zpm.zsh
 source $ZSH_CUSTOM/.zpmrc
 
 # Finally load alises
-cd "$ZSH_CUSTOM/lib"
-    load "aliases.*.sh"
+cd "$ZSH_CUSTOM/lib/aliases/"
+    load ".*.sh"
 cd - &> /dev/null

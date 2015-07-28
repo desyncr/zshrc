@@ -36,3 +36,7 @@ export EDITOR=vim
 export ZSH=$HOME/.zpm/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git
 export ZSH_CACHE_DIR=$ZSH/cache
 
+# Remove this annoyance
+setopt NO_BEEP
+bindkey "\e[1~" beginning-of-line
+bindkey "\e[4~" end-of-line

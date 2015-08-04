@@ -1,7 +1,8 @@
 # zpm extensions
 zpm ext <<EXT
     desyncr/zpm-ext cache # cache plugins and themes
-    desyncr/zpm-ext theme # install and load themes
+    desyncr/zpm-ext theme # install and load themes1
+    desyncr/zpm-ext use   # use bitbucket, github, gitlab
 EXT
 
 # install these tools
@@ -19,6 +20,7 @@ zpm load <<LOAD
     zsh-users/zsh-syntax-highlighting # fish-like syntax highlighting
     pindexis/qfc bin/qfc.sh           # quick file search (ctrl+f)
     paoloantinori/hhighlighter h.sh   # terms highlighting, cat file.txt | h search
+    felixr/docker-zsh-completion
 LOAD
 
 # load theme

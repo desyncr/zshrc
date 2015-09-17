@@ -33,3 +33,7 @@ zstyle ':completion:*' menu select auto
 
 [[ -z $ZSH_CUSTOM ]] && ZSH_CUSTOM=$(dirname $(readlink -f ~/.zshrc))
 source $ZSH_CUSTOM/bootstrap.zsh
+
+# Enable autosuggestions automatically.
+zle-line-init() { zle autosuggest-start }
+[[ autosuggest-start ]] && zle -N zle-line-init

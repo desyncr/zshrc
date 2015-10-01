@@ -35,5 +35,5 @@ zstyle ':completion:*' menu select auto
 source $ZSH_CUSTOM/bootstrap.zsh
 
 # Enable autosuggestions automatically.
-zle-line-init() { zle autosuggest-start }
-[[ autosuggest-start ]] && zle -N zle-line-init
+#zle-line-init() { zle autosuggest-start }
+#[[ autosuggest-start ]] && zle -N zle-line-init

@@ -21,7 +21,7 @@ zpm load <<LOAD
     pindexis/qfc bin/qfc.sh           # quick file search (ctrl+f)
     paoloantinori/hhighlighter h.sh   # terms highlighting, cat file.txt | h search
     felixr/docker-zsh-completion
-    tarruda/zsh-autosuggestions
+    #tarruda/zsh-autosuggestions
 LOAD
 
 # load theme

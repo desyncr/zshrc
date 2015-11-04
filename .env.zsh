@@ -14,6 +14,9 @@
 # use 'echo prefix = ~/.node >> ~/.npmrc' to configure npm bin path
 [[ -e ~/.node/bin ]] && PATH=$PATH:$HOME/.node/bin
 
+# set up heroku toolbelt installed through "wget -qO- https://toolbelt.heroku.com/install.sh | sh"
+[[ -e "/usr/local/heroku/bin" ]] && PATH="/usr/local/heroku/bin:$PATH"
+
 # Custom configuration
 export HISTORY_BASE=~/.config/directory_history
 export CDL_LS_PARAMS='-l'

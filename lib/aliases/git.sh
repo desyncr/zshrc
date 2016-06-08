@@ -13,6 +13,7 @@ alias gui="git update-index --no-assume-unchanged"
 alias gid="git ls-files -v | grep ^[a-z]"
 
 alias gco="git checkout"
+alias gu="git pull"
 
 # https://hub.github.com/
 [[ -e "/usr/local/bin/hub" ]] && alias git="hub"

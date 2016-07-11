@@ -1,6 +1,6 @@
 # Bundles
 antigen bundles <<EOBUNDLES
-  jimhester/per-directory-history
+  #jimhester/per-directory-history
   zsh-users/zsh-syntax-highlighting
   desyncr/vagrant-zsh-completion
   felixr/docker-zsh-completion

@@ -12,3 +12,4 @@ alias gco="git co "
 
 # Quickly see error logs
 alias errorlog="lnav /var/log/phperror.log /tmp/queries.afluenta.txt"
+alias err="lnav /var/log/phperror.log /tmp/queries.afluenta.txt"

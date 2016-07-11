@@ -110,6 +110,9 @@ psg() {
     done
 
     psargs='%p %a'
+    if [ $(uname) = "Darwin" ]; then
+        psargs='pid args'
+    fi
     if [ $kill -eq 0 ]; then
         ps axo $psargs | grep -v grep | grep "$regexp"
     else

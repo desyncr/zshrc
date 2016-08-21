@@ -16,5 +16,5 @@ alias gco="git checkout"
 alias gu="git pull"
 
 # https://hub.github.com/
-[[ -e "/usr/local/bin/hub" ]] && alias git="hub"
+#[[ -e "/usr/local/bin/hub" ]] && alias git="hub"
 

@@ -1,6 +1,3 @@
-# Load fuzzy file find
-[[ -e ~/.fzf.zsh ]] && source ~/.fzf.zsh
-
 #[[ -e ~/.rvm/bin ]] && PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 #[[ -e ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 
@@ -9,13 +6,13 @@
 
 # Load nvm if present
 # export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # use 'echo prefix = ~/.node >> ~/.npmrc' to configure npm bin path
-[[ -e ~/.node/bin ]] && PATH=$PATH:$HOME/.node/bin
+#[[ -e ~/.node/bin ]] && PATH=$PATH:$HOME/.node/bin
 
 # set up heroku toolbelt installed through "wget -qO- https://toolbelt.heroku.com/install.sh | sh"
-[[ -e "/usr/local/heroku/bin" ]] && PATH="/usr/local/heroku/bin:$PATH"
+#[[ -e "/usr/local/heroku/bin" ]] && PATH="/usr/local/heroku/bin:$PATH"
 
 # Custom configuration
 export HISTORY_BASE=~/.config/directory_history
@@ -36,7 +33,7 @@ export VISUAL=vim
 export EDITOR=vim
 
 # Default theme requires OMZ
-export ZSH=$HOME/.zpm/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git
+export ZSH=$HOME/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git
 export ZSH_CACHE_DIR=$ZSH/cache
 
 # Remove this annoyance

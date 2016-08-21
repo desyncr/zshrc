@@ -1,7 +1,13 @@
 # Bundles
 antigen bundles <<EOBUNDLES
-  #jimhester/per-directory-history
+  git
+  command-not-found
+  colored-man-pages
+  zsh-users/zsh-autosuggestions
+  zsh-users/zsh-completions
+  jimhester/per-directory-history
   zsh-users/zsh-syntax-highlighting
+  zsh-users/zsh-history-substring-search
   desyncr/vagrant-zsh-completion
   felixr/docker-zsh-completion
 EOBUNDLES

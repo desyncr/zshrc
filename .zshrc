@@ -42,14 +42,16 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 zstyle ':completion:*' format ''
 zstyle ':completion:*' menu select auto
 
-# TODO this is not necessary on linux
-export PATH="/usr/local/sbin:$(brew --prefix homebrew/php/php56)/bin:$PATH"
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
+if [ $(uname) = "Darwin" ]; then
+  # TODO this is not necessary on linux
+  export PATH="/usr/local/sbin:$(brew --prefix homebrew/php/php56)/bin:$PATH"
+  export LC_ALL=en_US.UTF-8
+  export LANG=en_US.UTF-8
 
-# TODO this is different on linux
-export PATH="/usr/local/sbin:$(brew --prefix homebrew/php/php56)/bin:$PATH"
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+  # TODO this is different on linux
+  export PATH="/usr/local/sbin:$(brew --prefix homebrew/php/php56)/bin:$PATH"
+  [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+fi
 
 [[ -z $ZSH_CUSTOM ]] && ZSH_CUSTOM=$(dirname $(readlink -f $HOME/.zshrc))
 source $ZSH_CUSTOM/bootstrap.zsh

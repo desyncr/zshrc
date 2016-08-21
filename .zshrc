@@ -28,8 +28,10 @@ else
 fi
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
 zstyle ':completion:*' menu select=long
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle ':completion:*' use-compctl false
 zstyle ':completion:*' verbose true
 
@@ -40,13 +42,6 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 zstyle ':completion:*' format ''
 zstyle ':completion:*' menu select auto
 
-[[ -z $ZSH_CUSTOM ]] && ZSH_CUSTOM=$(dirname $(readlink ~/.zshrc))
-source $ZSH_CUSTOM/bootstrap.zsh
-
-# Enable autosuggestions automatically.
-#zle-line-init() { zle autosuggest-start }
-#[[ autosuggest-start ]] && zle -N zle-line-init
-
 # TODO this is not necessary on linux
 export PATH="/usr/local/sbin:$(brew --prefix homebrew/php/php56)/bin:$PATH"
 export LC_ALL=en_US.UTF-8
@@ -55,3 +50,6 @@ export LANG=en_US.UTF-8
 # TODO this is different on linux
 export PATH="/usr/local/sbin:$(brew --prefix homebrew/php/php56)/bin:$PATH"
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+[[ -z $ZSH_CUSTOM ]] && ZSH_CUSTOM=$(dirname $(readlink -f $HOME/.zshrc))
+source $ZSH_CUSTOM/bootstrap.zsh

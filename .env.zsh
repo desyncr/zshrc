@@ -22,14 +22,14 @@ export HISTORY_BASE=~/.config/directory_history
 export CDL_LS_PARAMS='-l'
 #export IFS=$'\n'
 
-# Set up zpm path
-export ZPM=~/.zpm
+# Set up antigen path
+export ANTIGEN=~/.antigen
 
 # Enable (or not) THEME_POWERLINE themes
 export THEME_POWERLINE=${THEME_POWERLINE:-false}
 
 # Powerline theme config
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 
 export GIT_EDITOR=vim
 export VISUAL=vim

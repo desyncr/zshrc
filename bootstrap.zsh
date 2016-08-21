@@ -12,9 +12,16 @@ cd - &> /dev/null
 
 # Load antigen and bootstrap the configuration
 source $ANTIGEN/antigen.zsh
-source $ZSH_CUSTOM/.antigenrc
+if [[ "$_ANTIGEN_INIT_ENABLED" == "true" ]]; then
+  antigen init $ZSH_CUSTOM/.antigenrc
+else
+  source $ZSH_CUSTOM/.antigenrc
+fi
 
 # Finally load alises
 cd "$ZSH_CUSTOM/lib/aliases/"
     load ".*.sh"
 cd - &> /dev/null
+
+# Use _ANTIGEN_PERF_ENABLED to quickly craft a performance check (time _ANTIGEN_PERF_ENABLED=true zsh)
+[[ "$_ANTIGEN_PERF_ENABLED" == "true" ]] && exit

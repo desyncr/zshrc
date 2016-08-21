@@ -1,3 +1,11 @@
+# Set up antigen path
+export ANTIGEN=~/.antigen
+
+# Antigen global configurations
+export _ANTIGEN_PERF_ENABLED=${_ANTIGEN_PERF_ENABLED:-false}
+export _ANTIGEN_INIT_ENABLED=true  # feature/bundle-cache
+export _ANTIGEN_CACHE_ENABLED=true # feature/bundle-cache
+
 #[[ -e ~/.rvm/bin ]] && PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 #[[ -e ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 
@@ -18,9 +26,6 @@
 export HISTORY_BASE=~/.config/directory_history
 export CDL_LS_PARAMS='-l'
 #export IFS=$'\n'
-
-# Set up antigen path
-export ANTIGEN=~/.antigen
 
 # Enable (or not) THEME_POWERLINE themes
 export THEME_POWERLINE=${THEME_POWERLINE:-false}

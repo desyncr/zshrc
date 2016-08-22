@@ -11,6 +11,7 @@ alias :q="exit"
 alias reboot="sudo shutdown -r now"
 alias diskusage='du -hd1|sort -h'
 alias \#='echo "">/dev/null'
+alias '//'='echo "">/dev/null'
 
 alias pingoogle="ping 8.8.8.8"
 

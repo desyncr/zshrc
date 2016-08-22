@@ -13,3 +13,5 @@ alias gco="git co "
 # Quickly see error logs
 alias errorlog="lnav /var/log/phperror.log /tmp/queries.afluenta.txt"
 alias err="lnav /var/log/phperror.log /tmp/queries.afluenta.txt"
+
+alias translations="php ./afluenta_core/afluenta/scripts/locale_import.php master_with_dev"

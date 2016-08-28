@@ -1,46 +1,11 @@
-# custom functions
-dladd() {
-  if [ -z $DUMPR_DL_DIR ]; then
-    DUMPR_DL_DIR='.'
-  fi
-
-  if [ -z $DUMPR_DL_LIST ]; then
-    DUMPR_DL_LIST='list'
-  fi
-
-  listname="$DUMPR_DL_DIR/$DUMPR_DL_LIST"
-
-  for i; do
-    echo "$i" >> $listname
-  done
-  
-  echo 'Updated ' $listname
-}
-
+# displays command history sorted by usage
 tophistory() {
   history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head -n 30
 }
 
-_c() {
-  if [ -z $CDL_LS_PARAMS ]; then
-      LS_PARAMS=$2
-  fi
-
-  if [[ -d "$1" ]]; then
-    cd "$1"
-    ls $CDL_LS_PARAMS
-  else
-    echo "c: '$1': Directory not found"
-  fi
-}
-alias c=_c
-
+# quick and dirty calc
 calc() {
       echo "scale=3;$@" | bc -l
-}
-
-service() {
-    sudo /etc/init.d/$1 $2
 }
 
 # search keyword [path]
@@ -83,20 +48,26 @@ dlfrom () {
 
 # sources a given set of files
 # usage:
-#    load file|regexp|path root
+#    load file|regexp
+# example:
+#    load "$HOME/.zshrc.d/*.zsh-plugin"
+#    load "$HOME/.env*.sh" "$HOME/.zshrc.d/*.alias.zsh"
 load() {
-    regexp="$1"
-    root="$PWD"
-    if [ ! -z "$2" ]; then
-        root="$2"
-    fi
-    if [ -e "$root" ]; then
-        for f in $(find $root -print | grep "$regexp" | sort); do
-            source "$f"
-        done
-    fi
+    for regexp in $*; do
+	local root=$(dirname "$regexp")
+	for f in $(find "$root/" -print | grep "$regexp" | sort); do
+	    source "$f"
+	done
+    done
 }
 
+# list and filter processes 
+# usage:
+# 	psg regexp [--kill]
+# example:
+# 	psg
+# 	psg vim --kill
+# use --kill to kill listed processes
 psg() {
     regexp="$@"
     kill=0
@@ -120,4 +91,11 @@ psg() {
             kill $pid
         done
     fi
+}
+
+_ZSH_TIME_MARK=0
+mark() {
+    local NOW=$(date "+%s.%N")
+    echo "scale=3;$MARK-$NOW" | bc -l
+    _ZSH_TIME_MARK=$NOW
 }

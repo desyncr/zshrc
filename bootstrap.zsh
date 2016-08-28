@@ -2,13 +2,10 @@
 source $ZSH_CUSTOM/lib/functions.zsh
 
 # Load all environment variables
-# First it tries to load custom env.*.zsh then the default .env.zsh
+# First it tries to load default env.zsh then the custom .env..*.zsh
 # This is useful if you want to have custom (not versioned) environment configs,
 # such as .env.work.zsh or .env.private.zsh.
-cd $ZSH_CUSTOM
-    load ".env.*.zsh"
-    load ".env.zsh"
-cd - &> /dev/null
+load "$ZSH_CUSTOM/.env.zsh" "$ZSH_CUSTOM/.env..*.zsh"
 
 # Load antigen and bootstrap the configuration
 source $ANTIGEN/antigen.zsh
@@ -19,9 +16,5 @@ else
 fi
 
 # Finally load alises
-cd "$ZSH_CUSTOM/lib/aliases/"
-    load ".*.sh"
-cd - &> /dev/null
+load "$ZSH_CUSTOM/lib/aliases/.*.sh"
 
-# Use _ANTIGEN_PERF_ENABLED to quickly craft a performance check (time _ANTIGEN_PERF_ENABLED=true zsh)
-[[ "$_ANTIGEN_PERF_ENABLED" == "true" ]] && exit

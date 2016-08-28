@@ -1,37 +1,41 @@
-# Set up the prompt
-autoload -Uz promptinit
-promptinit
+if [[ "$_ANTIGEN_XTRACE_ENABLED" == "true" ]]; then
+  # set the trace prompt to include seconds, nanoseconds, script name and line
+  # number
+  PS4=$'%D{%M%S%.} %N:%i> ' 
+  # save file stderr to file descriptor 3 and redirect stderr (including trace
+  # output) to a file with the script's PID as an extension
+  exec 3>&2 2>$_XTRACE_OUTPUT
+  # set options to turn on tracing and expansion of commands contained in the
+  # prompt
+  setopt xtrace prompt_subst
+fi
+
 setopt histignorealldups sharehistory
 
 # Use emacs keybindings even if our EDITOR is set to vi
-bindkey -e
+#bindkey -e
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.config/zsh_history
 
-zstyle ':completion:*' auto-description 'specify: %d'
-zstyle ':completion:*' completer _expand _complete _correct _approximate
-zstyle ':completion:*' format 'Completing %d'
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*' menu select=2
-
 # work both on unix and linux
-if whence dircolors >/dev/null; then
+if which dircolors > /dev/null; then
   eval "$(dircolors -b)"
   zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-  alias ls='ls --color'
 else
   export CLICOLOR=1
   zstyle ':completion:*:default' list-colors ''
 fi
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' list-colors ''
+
+zstyle ':completion:*' auto-description 'specify: %d'
+zstyle ':completion:*' completer _expand _complete _correct _approximate
+zstyle ':completion:*' group-name ''
+
 zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
-zstyle ':completion:*' menu select=long
-zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+zstyle ':completion:*' select-prompt ''
 zstyle ':completion:*' use-compctl false
 zstyle ':completion:*' verbose true
 
@@ -40,18 +44,19 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # Fix default zstyle for tab completion
 zstyle ':completion:*' format ''
-zstyle ':completion:*' menu select auto
+zstyle ':completion:*:*' menu select long
 
-if [ $(uname) = "Darwin" ]; then
-  # TODO this is not necessary on linux
-  export PATH="/usr/local/sbin:$(brew --prefix homebrew/php/php56)/bin:$PATH"
-  export LC_ALL=en_US.UTF-8
-  export LANG=en_US.UTF-8
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path $HOME/.zshrc.d/ 
 
-  # TODO this is different on linux
-  export PATH="/usr/local/sbin:$(brew --prefix homebrew/php/php56)/bin:$PATH"
-  [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+[[ -z $ZSH_CUSTOM ]] && ZSH_CUSTOM=$HOME/.zshrc.d
+source $ZSH_CUSTOM/bootstrap.zsh
+
+if [[ "$_ANTIGEN_XTRACE_ENABLED" == "true" ]]; then
+  # turn off tracing
+  unsetopt xtrace
+  # restore stderr to the value saved in FD 3
+  exec 2>&3 3>&-
 fi
 
-[[ -z $ZSH_CUSTOM ]] && ZSH_CUSTOM=$(dirname $(readlink -f $HOME/.zshrc))
-source $ZSH_CUSTOM/bootstrap.zsh

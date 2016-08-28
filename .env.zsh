@@ -1,26 +1,19 @@
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Configure vim as default editor
+export GIT_EDITOR=vim
+export VISUAL=vim
+export EDITOR=vim
+
 # Set up antigen path
-export ANTIGEN=~/.antigen
+export ANTIGEN=$HOME/.antigen
 
 # Antigen global configurations
 export _ANTIGEN_PERF_ENABLED=${_ANTIGEN_PERF_ENABLED:-false}
-export _ANTIGEN_INIT_ENABLED=true  # feature/bundle-cache
-export _ANTIGEN_CACHE_ENABLED=true # feature/bundle-cache
-
-#[[ -e ~/.rvm/bin ]] && PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-#[[ -e ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
-
-#export PHPBREW_SET_PROMPT=0
-#[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
-
-# Load nvm if present
-# export NVM_DIR="$HOME/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# use 'echo prefix = ~/.node >> ~/.npmrc' to configure npm bin path
-#[[ -e ~/.node/bin ]] && PATH=$PATH:$HOME/.node/bin
-
-# set up heroku toolbelt installed through "wget -qO- https://toolbelt.heroku.com/install.sh | sh"
-#[[ -e "/usr/local/heroku/bin" ]] && PATH="/usr/local/heroku/bin:$PATH"
+#export _ANTIGEN_INIT_ENABLED=false # feature/bundle-cache
+#export _ANTIGEN_CACHE_ENABLED=false # feature/bundle-cache
+# _ANTIGEN_XTRACE_ENABLED
 
 # Custom configuration
 export HISTORY_BASE=~/.config/directory_history
@@ -30,16 +23,17 @@ export CDL_LS_PARAMS='-l'
 # Enable (or not) THEME_POWERLINE themes
 export THEME_POWERLINE=${THEME_POWERLINE:-false}
 
-# Powerline theme config
-#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
-
-export GIT_EDITOR=vim
-export VISUAL=vim
-export EDITOR=vim
-
 # Default theme requires OMZ
 export ZSH=$HOME/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git
 export ZSH_CACHE_DIR=$ZSH/cache
+
+if [ $(uname) = "Darwin" ]; then
+  # TODO this is not necessary on linux
+  export PATH="/usr/local/sbin:$(brew --prefix homebrew/php/php56)/bin:$PATH"
+
+  # TODO this is different on linux
+  [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+fi
 
 # Remove this annoyance
 setopt NO_BEEP

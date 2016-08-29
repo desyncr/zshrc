@@ -55,7 +55,7 @@ dlfrom () {
 load() {
     for regexp in $*; do
 	local root=$(dirname "$regexp")
-	for f in $(find "$root/" -print | grep "$regexp" | sort); do
+	for f in $(find "$root" -print | grep "$regexp" | sort); do
 	    source "$f"
 	done
     done
@@ -93,9 +93,13 @@ psg() {
     fi
 }
 
-_ZSH_TIME_MARK=0
-mark() {
-    local NOW=$(date "+%s.%N")
-    echo "scale=3;$MARK-$NOW" | bc -l
-    _ZSH_TIME_MARK=$NOW
-}
+if [[ "$_ENABLE_MARK" == true ]]; then
+    zmodload zsh/datetime
+    _ZSH_TIME_MARK=$EPOCHREALTIME
+    mark() {
+	echo $(echo "scale=3;$EPOCHREALTIME-$_ZSH_TIME_MARK" | bc -l) "$*"
+	_ZSH_TIME_MARK=$EPOCHREALTIME
+    }
+else
+   mark() {}
+fi

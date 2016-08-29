@@ -11,9 +11,10 @@ export ANTIGEN=$HOME/.antigen
 
 # Antigen global configurations
 export _ANTIGEN_PERF_ENABLED=${_ANTIGEN_PERF_ENABLED:-false}
-#export _ANTIGEN_INIT_ENABLED=false # feature/bundle-cache
-#export _ANTIGEN_CACHE_ENABLED=false # feature/bundle-cache
+export _ANTIGEN_INIT_ENABLED=true
+export _ANTIGEN_CACHE_ENABLED=true
 # _ANTIGEN_XTRACE_ENABLED
+# _ENABLE_MARK
 
 # Custom configuration
 export HISTORY_BASE=~/.config/directory_history
@@ -28,10 +29,8 @@ export ZSH=$HOME/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robby
 export ZSH_CACHE_DIR=$ZSH/cache
 
 if [ $(uname) = "Darwin" ]; then
-  # TODO this is not necessary on linux
-  export PATH="/usr/local/sbin:$(brew --prefix homebrew/php/php56)/bin:$PATH"
-
   # TODO this is different on linux
+  # this adds 0.05s
   [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 fi
 

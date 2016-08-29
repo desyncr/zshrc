@@ -14,4 +14,14 @@ alias gco="git co "
 alias errorlog="lnav /var/log/phperror.log /tmp/queries.afluenta.txt"
 alias err="lnav /var/log/phperror.log /tmp/queries.afluenta.txt"
 
+# Update translations
 alias translations="php ./afluenta_core/afluenta/scripts/locale_import.php master_with_dev"
+
+# Update actions
+alias actions="cd /afluenta-platform && php ./afluenta_web/lib/sync_actions.php && php ./afluenta_web/symfony cc
+&& cd -"
+
+# Run workers
+alias workers="cd /afluenta-platform/afluenta_core/afluenta/scripts && php ./cmd_start_workers.php && cd -"
+
+alias killmem="sudo pkill memcached"

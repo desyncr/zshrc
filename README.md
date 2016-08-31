@@ -1,7 +1,7 @@
 .zshrc
 ==========
 
-Repository to save my custom ZSH settings and themes.
+Repository to save my custom Zsh settings and themes.
 
 Install
 -------
@@ -31,27 +31,12 @@ Install
 Optional
 --------
 
-* Install [autojump](https://github.com/joelthelion/autojump)
-
-
-* Install [fzf](https://github.com/junegunn/fzf)
-
-        git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-        ~/.fzf/install
-
-        rm ~/.fzf.zsh
-        ln ~/zshrc/.fzf.zsh ~/.fzf.zsh
-
 * Install powerline fonts. See section below.
 
 Configure
 ---------
 
 Check ``bootstrap.zsh`` for examples and default configuration.
-
-If you run into problems with themes or the prompt run the following command and restart the shell:
-
-    sed -i "s/prompt /#prompt /g" ~/.zshrc
 
 Powerline fonts
 -----------

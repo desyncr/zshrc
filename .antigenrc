@@ -11,6 +11,7 @@ antigen bundles <<EOBUNDLES
   #desyncr/vagrant-zsh-completion
   #felixr/docker-zsh-completion
   #paoloantinori/hhighlighter h.sh
+  rupa/z
 EOBUNDLES
 
 # Load the theme. Set ANTIGEN_POWERLINE to true to enable Powerline-based theme.

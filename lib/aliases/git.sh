@@ -18,3 +18,11 @@ alias gu="git pull"
 # https://hub.github.com/
 #[[ -e "/usr/local/bin/hub" ]] && alias git="hub"
 
+# fzf git add
+function add() {
+	local file="true"
+	while [[ "$file" ]]; do
+		file=$(git ls-files --modified|fzf)
+		[[ "$file" ]] && git add "$file";
+	done
+}

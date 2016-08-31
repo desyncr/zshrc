@@ -9,7 +9,7 @@ Install
 
         git clone https://github.com/zsh-users/antigen.git $HOME/.antigen
 
-* Clone this repo `$HOME/.zshrc.d`:
+* Clone this repo in `$HOME/.zshrc.d`:
 
         git clone https://github.com/desyncr/zshrc.git $HOME/.zshrc.d
 
@@ -19,13 +19,13 @@ Install
 
         # Or you could use my own .zshrc at $HOME/.zshrc.d/.zshrc
 
-* Restart zsh and done!
+* Restart Zsh and done!
 
 
 Optional
 --------
 
-* Install powerline fonts. See section below.
+* Install Powerline fonts. See section below.
 
 Configure
 ---------

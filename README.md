@@ -5,25 +5,19 @@ Repository to save my custom Zsh settings and themes.
 
 Install
 -------
-* Install [Antigen](https://github.com/zsh-users/antigen) somewhere:
+* Install [Antigen](https://github.com/zsh-users/antigen) in `$HOME/.antigen`:
 
-        git clone git@github.com:zsh-users/antigen.git ~/.antigen
-        source ~/.antigen/antigen.zsh
+        git clone https://github.com/zsh-users/antigen.git $HOME/.antigen
 
-* Clone this repo somewhere:
+* Clone this repo `$HOME/.zshrc.d`:
 
-        git clone git@github.com:desyncr/zshrc.git ~/.zshrc.d
+        git clone https://github.com/desyncr/zshrc.git $HOME/.zshrc.d
 
-* Hook the new .zshrc:
+* Hook it into your .zshrc:
 
-        [[ -e ~/.zshrc ]] && mv ~/.zshrc ~/.zshrc.$(date +%s)
-        ln -s ~/.zshrc.d/.zshrc ~
+        echo "source $HOME/.zshrc.d/bootstrap.zsh" >> $HOME/.zshrc   # load configuration
 
-* Alternatively, use it in your own .zshrc:
-
-        echo "export ANTIGEN=~/.antigen/" >> ~/.zshrc # exports Antigen path
-        echo "source ~/.zshrc.d/bootstrap.zsh" >> ~/.zshrc # loads out stuff
-
+        # Or you could use my own .zshrc at $HOME/.zshrc.d/.zshrc
 
 * Restart zsh and done!
 

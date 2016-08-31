@@ -23,6 +23,7 @@ export CDL_LS_PARAMS='-l'
 
 # Enable (or not) THEME_POWERLINE themes
 export THEME_POWERLINE=${THEME_POWERLINE:-false}
+export POWERLEVEL9K_TIME_FORMAT="%D{%H:%M | %d.%m.%y}"
 
 # Default theme requires OMZ
 export ZSH=$HOME/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git

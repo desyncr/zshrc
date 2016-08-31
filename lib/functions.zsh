@@ -5,7 +5,9 @@ tophistory() {
 
 # quick and dirty calc
 calc() {
-      echo "scale=3;$@" | bc -l
+      autoload zcalc
+      zcalc "$*"
+      #echo "scale=3;$@" | bc -l
 }
 
 # search keyword [path]

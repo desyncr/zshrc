@@ -12,6 +12,7 @@ alias reboot="sudo shutdown -r now"
 alias du='du -hd1|sort -h'
 alias \#='echo "">/dev/null'
 alias //='echo "">/dev/null'
+alias j=z
 
 alias pingo="ping 8.8.8.8"
 

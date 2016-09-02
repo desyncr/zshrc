@@ -9,13 +9,6 @@ export EDITOR=vim
 # Set up antigen path
 export ANTIGEN=$HOME/.antigen
 
-# Antigen global configurations
-export _ANTIGEN_PERF_ENABLED=${_ANTIGEN_PERF_ENABLED:-false}
-export _ANTIGEN_INIT_ENABLED=true
-export _ANTIGEN_CACHE_ENABLED=true
-# _ANTIGEN_XTRACE_ENABLED
-# _ENABLE_MARK
-
 # Custom configuration
 export HISTORY_BASE=~/.config/directory_history
 export CDL_LS_PARAMS='-l'
@@ -24,16 +17,6 @@ export CDL_LS_PARAMS='-l'
 # Enable (or not) THEME_POWERLINE themes
 export THEME_POWERLINE=${THEME_POWERLINE:-false}
 export POWERLEVEL9K_TIME_FORMAT="%D{%H:%M | %d.%m.%y}"
-
-# Default theme requires OMZ
-export ZSH=$HOME/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git
-export ZSH_CACHE_DIR=$ZSH/cache
-
-if [ $(uname) = "Darwin" ]; then
-  # TODO this is different on linux
-  # this adds 0.05s
-  [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-fi
 
 # Remove this annoyance
 setopt NO_BEEP

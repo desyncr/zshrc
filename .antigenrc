@@ -1,30 +1,28 @@
 # Bundles
 antigen bundles <<EOBUNDLES
   git
-  #command-not-found
-  #colored-man-pages
+  command-not-found
+  colored-man-pages
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-completions
   jimhester/per-directory-history
   zsh-users/zsh-syntax-highlighting
   zsh-users/zsh-history-substring-search
-  #desyncr/vagrant-zsh-completion
-  #felixr/docker-zsh-completion
-  #paoloantinori/hhighlighter h.sh
+  desyncr/vagrant-zsh-completion
+  felixr/docker-zsh-completion
+  paoloantinori/hhighlighter h.sh
   rupa/z
   junegunn/fzf
 EOBUNDLES
 
 # Load the theme. Set ANTIGEN_POWERLINE to true to enable Powerline-based theme.
-if ( $ANTIGEN_POWERLINE ); then
-    # using desyncr/powerlevel9k as dritter/powerlevel9k had some problem with locals/configuration
-    # move to bhilburn/powerlevel9k as soon as dritter branch is merged back into upstream
-    antigen theme desyncr/powerlevel9k powerlevel9k --branch=dritter/prezto
-else
-    # This theme requires omz, sigh
-    antigen use oh-my-zsh
-    antigen theme desyncr/zshrc themes/af-magic-mod
-fi
+# using desyncr/powerlevel9k as dritter/powerlevel9k had some problem with locals/configuration
+# move to bhilburn/powerlevel9k as soon as dritter branch is merged back into upstream
+antigen theme desyncr/powerlevel9k powerlevel9k --branch=dritter/prezto
+
+# This theme requires omz, sigh
+#antigen use oh-my-zsh
+#antigen theme desyncr/zshrc themes/af-magic-mod
 
 # Tell antigen that you're done.
 antigen apply

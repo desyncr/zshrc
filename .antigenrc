@@ -1,18 +1,15 @@
 # Bundles
 antigen bundles <<EOBUNDLES
   git
-  command-not-found
   colored-man-pages
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-completions
   jimhester/per-directory-history
   zsh-users/zsh-syntax-highlighting
-  zsh-users/zsh-history-substring-search
-  desyncr/vagrant-zsh-completion
-  felixr/docker-zsh-completion
   paoloantinori/hhighlighter h.sh
   rupa/z
   junegunn/fzf
+  zsh-navigation-tools
 EOBUNDLES
 
 # Load the theme. Set ANTIGEN_POWERLINE to true to enable Powerline-based theme.

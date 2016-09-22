@@ -8,7 +8,6 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-syntax-highlighting
   paoloantinori/hhighlighter h.sh
   rupa/z
-  junegunn/fzf
   zsh-navigation-tools
 EOBUNDLES
 

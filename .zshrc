@@ -50,7 +50,7 @@ zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path $HOME/.zshrc.d/ 
 
-[[ -z $ZSH_CUSTOM ]] && ZSH_CUSTOM=$HOME/.zshrc.d
+export ZSH_CUSTOM=${ZSH_CUSTOM:-$HOME/.zshrc.d}
 source $ZSH_CUSTOM/bootstrap.zsh
 
 if [[ "$_ANTIGEN_XTRACE_ENABLED" == "true" ]]; then

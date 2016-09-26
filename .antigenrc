@@ -1,10 +1,8 @@
 # Bundles
 antigen bundles <<EOBUNDLES
   git
-  colored-man-pages
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-completions
-  jimhester/per-directory-history
   zsh-users/zsh-syntax-highlighting
   paoloantinori/hhighlighter h.sh
   rupa/z

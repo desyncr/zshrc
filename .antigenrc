@@ -7,6 +7,7 @@ antigen bundles <<EOBUNDLES
   paoloantinori/hhighlighter h.sh
   rupa/z
   zsh-navigation-tools
+  desyncr/gitr gitr.sh
 EOBUNDLES
 
 # Load the theme. Set ANTIGEN_POWERLINE to true to enable Powerline-based theme.

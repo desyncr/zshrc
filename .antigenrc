@@ -5,9 +5,11 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-completions
   zsh-users/zsh-syntax-highlighting
   paoloantinori/hhighlighter h.sh
-  rupa/z
   zsh-navigation-tools
   desyncr/gitr gitr.sh
+  rupa/z
+  desyncr/watch
+  #hchbaw/auto-fu.zsh
 EOBUNDLES
 
 # Load the theme. Set ANTIGEN_POWERLINE to true to enable Powerline-based theme.

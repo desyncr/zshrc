@@ -1,14 +1,12 @@
 # Bundles
 antigen bundles <<EOBUNDLES
-  git
-  zsh-users/zsh-autosuggestions
-  zsh-users/zsh-completions
-  zsh-users/zsh-syntax-highlighting
-  paoloantinori/hhighlighter h.sh
-  zsh-navigation-tools
-  desyncr/gitr gitr.sh
   rupa/z
   desyncr/watch
+  zsh-users/zsh-autosuggestions
+  zsh-users/zsh-syntax-highlighting
+  zsh-navigation-tools
+  #zsh-users/zsh-completions
+  #paoloantinori/hhighlighter h.sh
   #hchbaw/auto-fu.zsh
 EOBUNDLES
 

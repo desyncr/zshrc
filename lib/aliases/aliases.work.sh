@@ -24,5 +24,7 @@ alias actions="cd /afluenta-platform && php ./afluenta_web/lib/sync_actions.php 
 alias workers="cd /afluenta-platform/afluenta_core/afluenta/scripts && php ./cmd_start_workers.php && cd -"
 
 alias killmem="sudo pkill memcached"
+alias km="sudo pkill memcached"
 
 alias gruntt="cd /afluenta-platform/afluenta_web/grunt-public && grunt build-all && grunt watch"
+alias gr=gruntt

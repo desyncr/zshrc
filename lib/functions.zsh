@@ -99,8 +99,9 @@ if [[ "$_ENABLE_MARK" == true ]]; then
     zmodload zsh/datetime
     _ZSH_TIME_MARK=$EPOCHREALTIME
     mark() {
-	echo $(echo "scale=3;$EPOCHREALTIME-$_ZSH_TIME_MARK" | bc -l) "$*"
-	_ZSH_TIME_MARK=$EPOCHREALTIME
+        ((  res=$EPOCHREALTIME-$_ZSH_TIME_MARK ))
+        _ZSH_TIME_MARK=$EPOCHREALTIME
+        echo $res $*
     }
 else
    mark() {}

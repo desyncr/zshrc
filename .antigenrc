@@ -12,6 +12,9 @@ antigen bundles <<EOBUNDLES
   #hchbaw/auto-fu.zsh
   desyncr/gitr
   peterhurford/up.zsh
+  supercrabtree/k
+  psprint/zsh-select
+  desyncr/zsh-ctrlp
 EOBUNDLES
 
 # Load the theme. Set ANTIGEN_POWERLINE to true to enable Powerline-based theme.

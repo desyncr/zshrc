@@ -15,6 +15,7 @@ antigen bundles <<EOBUNDLES
   supercrabtree/k
   psprint/zsh-select
   desyncr/zsh-ctrlp
+  pindexis/qfc bin
 EOBUNDLES
 
 # Load the theme. Set ANTIGEN_POWERLINE to true to enable Powerline-based theme.

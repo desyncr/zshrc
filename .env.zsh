@@ -28,3 +28,5 @@ bindkey "\e[3~" delete-char
 bindkey "\e[1;5C" forward-word
 bindkey "\e[1;5D" backward-word
 
+# TODO remove with antigen 2.x
+PATH=$PATH:$ANTIGEN/repos/https-COLON--SLASH--SLASH-github.com-SLASH-pindexis-SLASH-qfc.git/bin/

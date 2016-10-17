@@ -27,3 +27,4 @@ bindkey "\e[3~" delete-char
 # Move word with Ctrl + left, right
 bindkey "\e[1;5C" forward-word
 bindkey "\e[1;5D" backward-word
+

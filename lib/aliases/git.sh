@@ -19,10 +19,18 @@ alias gu="git pull"
 #[[ -e "/usr/local/bin/hub" ]] && alias git="hub"
 
 # fzf git add
-function add() {
-	local file=true
-	while $file; do
-		file=$(git ls-files --modified|fzf)
-		$file && git add "$file";
-	done
+FUZZER=zsh-select # default to zsh-select
+if (( $+commands[fzf] )); then
+    # use fzf if available
+    FUZZER=fzf
+fi
+
+function git-add() {
+    local file=true
+    while [[ ! -z "$file" ]]; do
+        file=$(git ls-files --modified|$FUZZER)
+        if [[ -f "$file" ]]; then
+            git add "$file";
+        fi
+    done
 }

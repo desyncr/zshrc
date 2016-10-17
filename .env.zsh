@@ -7,7 +7,7 @@ export VISUAL=vim
 export EDITOR=vim
 
 # Set up antigen path
-export ANTIGEN=${ANTIGEN:-$HOME/Projects/antigen/}
+export ANTIGEN=${ANTIGEN:-$HOME/.antigen}
 
 # Custom configuration
 export HISTORY_BASE=~/.config/directory_history

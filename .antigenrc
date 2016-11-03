@@ -1,6 +1,7 @@
 # Bundles
 antigen bundles <<EOBUNDLES
   rupa/z
+  desyncr/key-bindings
   desyncr/watch
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-syntax-highlighting

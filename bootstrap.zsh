@@ -11,11 +11,7 @@ source "$ZSH_CUSTOM/.env.zsh"
 
 # Load antigen and bootstrap the configuration
 source $ANTIGEN/antigen.zsh
-if [[ "$_ANTIGEN_INIT_ENABLED" == "true" ]]; then
-  antigen init $ZSH_CUSTOM/.antigenrc
-else
-  source $ZSH_CUSTOM/.antigenrc
-fi
+antigen init $ZSH_CUSTOM/.antigenrc
 
 # Finally load alises
 load "$ZSH_CUSTOM/lib/aliases/.*.sh"

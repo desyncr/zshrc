@@ -20,13 +20,4 @@ export POWERLEVEL9K_TIME_FORMAT="%D{%H:%M | %d.%m.%y}"
 
 # Remove this annoyance
 setopt NO_BEEP
-bindkey "\e[1~" beginning-of-line
-bindkey "\e[4~" end-of-line
-bindkey "\e[3~" delete-char
 
-# Move word with Ctrl + left, right
-bindkey "\e[1;5C" forward-word
-bindkey "\e[1;5D" backward-word
-
-# TODO remove with antigen 2.x
-PATH=$PATH:$ANTIGEN/repos/https-COLON--SLASH--SLASH-github.com-SLASH-pindexis-SLASH-qfc.git/bin/

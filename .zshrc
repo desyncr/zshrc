@@ -1,15 +1,3 @@
-if [[ "$_ANTIGEN_XTRACE_ENABLED" == "true" ]]; then
-  # set the trace prompt to include seconds, nanoseconds, script name and line
-  # number
-  PS4=$'%D{%M%S%.} %N:%i> ' 
-  # save file stderr to file descriptor 3 and redirect stderr (including trace
-  # output) to a file with the script's PID as an extension
-  exec 3>&2 2>$_XTRACE_OUTPUT
-  # set options to turn on tracing and expansion of commands contained in the
-  # prompt
-  setopt xtrace prompt_subst
-fi
-
 setopt histignorealldups sharehistory
 
 # Use emacs keybindings even if our EDITOR is set to vi
@@ -48,15 +36,8 @@ zstyle ':completion:*:*' menu select long
 
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path $HOME/.zshrc.d/ 
+zstyle ':completion:*' cache-path $HOME/.zshrc.d/
 
 export ZSH_CUSTOM=${ZSH_CUSTOM:-$HOME/.zshrc.d}
 source $ZSH_CUSTOM/bootstrap.zsh
-
-if [[ "$_ANTIGEN_XTRACE_ENABLED" == "true" ]]; then
-  # turn off tracing
-  unsetopt xtrace
-  # restore stderr to the value saved in FD 3
-  exec 2>&3 3>&-
-fi
 

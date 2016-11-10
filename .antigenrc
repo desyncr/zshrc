@@ -17,7 +17,8 @@ EOBUNDLES
 # using desyncr/powerlevel9k as dritter/powerlevel9k had some problem with locals/configuration
 # move to bhilburn/powerlevel9k as soon as dritter branch is merged back into upstream
 #antigen theme desyncr/powerlevel9k powerlevel9k --branch=dritter/prezto
-antigen bundle frmendes/geometry
+#antigen bundle frmendes/geometry
+antigen bundle desyncr/geometry --branch=feature/async-git-prompt
 
 # This theme requires omz, sigh
 #antigen use oh-my-zsh

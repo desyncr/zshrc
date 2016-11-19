@@ -11,12 +11,7 @@ export ANTIGEN=${ANTIGEN:-$HOME/.antigen}
 
 # Custom configuration
 export HISTORY_BASE=~/.config/directory_history
-export CDL_LS_PARAMS='-l'
 #export IFS=$'\n'
-
-# Enable (or not) THEME_POWERLINE themes
-export THEME_POWERLINE=${THEME_POWERLINE:-false}
-export POWERLEVEL9K_TIME_FORMAT="%D{%H:%M | %d.%m.%y}"
 
 # Remove this annoyance
 setopt NO_BEEP

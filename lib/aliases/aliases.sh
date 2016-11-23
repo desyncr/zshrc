@@ -1,6 +1,6 @@
 # shortcuts
 alias mkdir="mkdir -p "
-alias ls='ls --color=auto'
+#alias ls='ls --color=auto'
 alias ll="ls -lShra "
 alias l="ll"
 alias lt="ls -lthra"

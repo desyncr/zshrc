@@ -5,6 +5,7 @@ cd $ANTIGEN
 git checkout $version
 
 echo Clearing up cache...
+rm -f ~/.zcompdump*
 # Ensure antigen cache is reset (to avoid issues between versions)
 rm ~/.antigen/.cache/.zcache-payload
 /usr/bin/time zsh -ic exit &> /dev/null

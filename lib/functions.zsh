@@ -55,11 +55,12 @@ dlfrom () {
 #    load "$HOME/.zshrc.d/*.zsh-plugin"
 #    load "$HOME/.env*.sh" "$HOME/.zshrc.d/*.alias.zsh"
 load() {
+    local root
     for regexp in $*; do
-	local root=$(dirname "$regexp")
-	for f in $(find "$root" -print | grep "$regexp" | sort); do
-	    source "$f"
-	done
+        root=$(dirname "$regexp")
+        for f in $(find "$root" -print | grep "$regexp" | sort); do
+            source "$f"
+        done
     done
 }
 

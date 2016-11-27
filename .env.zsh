@@ -16,3 +16,5 @@ export HISTORY_BASE=~/.config/directory_history
 # Remove this annoyance
 setopt NO_BEEP
 
+export PROMPT_GEOMETRY_GIT_CONFLICTS=true
+#export PROMPT_GEOMETRY_SHOW_RPROMPT=true

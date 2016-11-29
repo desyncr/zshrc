@@ -28,3 +28,5 @@ alias km="sudo pkill memcached"
 
 alias gruntt="cd /afluenta-platform/afluenta_web/grunt-public && grunt build-all && grunt watch"
 alias gr=gruntt
+
+alias mysql="mysql --host=192.168.1.210 --user=afluenta --password=dev#root afluenta"

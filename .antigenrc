@@ -16,7 +16,7 @@ antigen bundles <<EOBUNDLES
 EOBUNDLES
 
 antigen bundle desyncr/geometry --branch=feature/plugin-architecture
-antigen bundle desyncr/6262aa698ecbcf773378cf1ea14d0e2c # geometry's geo plugin
+antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c # geometry's geo plugin
 
 # Tell antigen that you're done.
 antigen apply

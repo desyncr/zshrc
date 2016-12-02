@@ -12,11 +12,12 @@ antigen bundles <<EOBUNDLES
   desyncr/zsh-ctrlp
   desyncr/zsh-icdiff
   sevanteri/zsh-dir-scroller
-
 EOBUNDLES
 
-antigen bundle desyncr/geometry --branch=feature/plugin-architecture
-antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c # geometry's geo plugin
+#antigen bundle frmendes/geometry
+#antigen bundle desyncr/geometry --branch=feature/plugin-architecture
+antigen bundle ~/Playground/geometry --no-local-clone
+#antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c # geometry's geo plugin
 
 # Tell antigen that you're done.
 antigen apply

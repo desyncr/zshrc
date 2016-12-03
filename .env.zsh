@@ -16,9 +16,13 @@ export HISTORY_BASE=~/.config/directory_history
 # Remove this annoyance
 setopt NO_BEEP
 
-export _ANTIGEN_CACHE_ENABLED=false
+#export _ANTIGEN_CACHE_ENABLED=true
 export PROMPT_GEOMETRY_GIT_CONFLICTS=true
 #export PROMPT_GEOMETRY_SHOW_RPROMPT=true
 export PROMPT_DOCKER_MACHINE_ENABLED=true
 export PROMPT_GEOMETRY_EXEC_TIME=true
 export PROMPT_VIRTUALENV_ENABLED=true
+
+autoload -U deer
+zle -N deer
+bindkey '\ek' deer

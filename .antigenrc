@@ -12,6 +12,7 @@ antigen bundles <<EOBUNDLES
   desyncr/zsh-ctrlp
   desyncr/zsh-icdiff
   sevanteri/zsh-dir-scroller
+  Vifon/deer deer
 EOBUNDLES
 
 #antigen bundle frmendes/geometry

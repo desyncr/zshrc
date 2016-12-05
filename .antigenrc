@@ -1,4 +1,4 @@
-antigen use oh-my-zsh
+#antigen use oh-my-zsh
 # Bundles
 antigen bundles <<EOBUNDLES
   rupa/z
@@ -17,8 +17,9 @@ antigen bundles <<EOBUNDLES
 EOBUNDLES
 
 #antigen bundle frmendes/geometry
+antigen bundle frmendes/geometry --branch=v2
+#antigen bundle ~/Playground/geometry --no-local-clone
 #antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c # geometry's geo plugin
-antigen bundle ~/Playground/geometry --no-local-clone
 
 # Tell antigen that you're done.
 antigen apply

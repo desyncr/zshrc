@@ -22,7 +22,9 @@ export PROMPT_GEOMETRY_GIT_CONFLICTS=true
 export PROMPT_DOCKER_MACHINE_ENABLED=true
 export PROMPT_GEOMETRY_EXEC_TIME=false
 export PROMPT_VIRTUALENV_ENABLED=true
+export PROMPT_GEOMETRY_GIT_ASYNC=true
 
 autoload -U deer
 zle -N deer
 bindkey '\ek' deer
+

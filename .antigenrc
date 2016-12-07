@@ -1,4 +1,4 @@
-antigen use oh-my-zsh
+#antigen use oh-my-zsh
 # Bundles
 antigen bundles <<EOBUNDLES
   rupa/z

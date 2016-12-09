@@ -16,11 +16,8 @@ antigen bundles <<EOBUNDLES
   Vifon/deer deer
 EOBUNDLES
 
-antigen bundle frmendes/geometry --branch=v2
-# This only works on geometry's v2 branch
-antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c # geometry's geo plugin
-
-# To test out locally
+antigen bundle frmendes/geometry
+antigen bundle desyncr/geometry-dir-info-prompt
 #antigen bundle ~/Playground/geometry --no-local-clone
 
 # Tell antigen that you're done.

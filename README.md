@@ -44,6 +44,7 @@ directory.
 If you'd like to contribute to the project or file a bug or feature request, please visit
 [the project page][1].
 
+
 ## License
 
 The project is licensed under the [GNU GPL v3][2] license.

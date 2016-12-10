@@ -16,7 +16,7 @@ Install
 * Configure it into your `$HOME/.zshrc`:
 
         echo "export ZSH_CUSTOM=${ZSH_CUSTOM:-$HOME/.zshrc.d}"  >> $HOME/.zshrc
-        echo "source $ZSH_CUSTOM/bootstrap.zsh"                 >> $HOME/.zshrc   # load configuration
+        echo "source \$ZSH_CUSTOM/bootstrap.zsh"                >> $HOME/.zshrc   # load configuration
 
         # Or you could use my own .zshrc at $HOME/.zshrc.d/.zshrc
 

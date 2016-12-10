@@ -14,11 +14,16 @@ antigen bundles <<EOBUNDLES
   desyncr/zsh-icdiff
   sevanteri/zsh-dir-scroller
   Vifon/deer deer
+  
+  # Theme
+  frmendes/geometry
+  #~/Playground/geometry --no-local-clone
+  
+  # Geometry plugins
+  desyncr/geometry-dir-info-prompt
+  desyncr/get-prett-git
+  
 EOBUNDLES
-
-antigen bundle frmendes/geometry
-antigen bundle desyncr/geometry-dir-info-prompt
-#antigen bundle ~/Playground/geometry --no-local-clone
 
 # Tell antigen that you're done.
 antigen apply

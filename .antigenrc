@@ -1,4 +1,5 @@
 #antigen use oh-my-zsh
+
 # Bundles
 antigen bundles <<EOBUNDLES
   rupa/z
@@ -8,22 +9,20 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-syntax-highlighting
   psprint/zsh-navigation-tools
   #desyncr/gitr
-  #supercrabtree/k
+  supercrabtree/k
   psprint/zsh-select
   desyncr/zsh-ctrlp
   desyncr/zsh-icdiff
   sevanteri/zsh-dir-scroller
   Vifon/deer deer
-  
-  # Theme
-  frmendes/geometry
-  #~/Playground/geometry --no-local-clone
-  
-  # Geometry plugins
-  desyncr/geometry-dir-info-prompt
-  desyncr/get-prett-git
-  
 EOBUNDLES
+
+antigen bundle frmendes/geometry
+#antigen bundle ~/Playground/geometry --no-local-clone
+
+# Does not properly work on OSX
+#antigen bundle desyncr/geometry-dir-info-prompt
+#antigen bundle https://github.com/desyncr/geo-pretty-git/
 
 # Tell antigen that you're done.
 antigen apply

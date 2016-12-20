@@ -8,13 +8,14 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-syntax-highlighting
   psprint/zsh-navigation-tools
-  #desyncr/gitr
+  desyncr/gitr
   supercrabtree/k
   psprint/zsh-select
   desyncr/zsh-ctrlp
   desyncr/zsh-icdiff
   sevanteri/zsh-dir-scroller
   Vifon/deer deer
+  hlissner/zsh-autopair
 EOBUNDLES
 
 antigen bundle frmendes/geometry
@@ -23,6 +24,7 @@ antigen bundle frmendes/geometry
 # Does not properly work on OSX
 #antigen bundle desyncr/geometry-dir-info-prompt
 #antigen bundle https://github.com/desyncr/geo-pretty-git/
+#antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c
 
 # Tell antigen that you're done.
 antigen apply

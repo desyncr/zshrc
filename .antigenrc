@@ -20,11 +20,11 @@ EOBUNDLES
 
 antigen bundle frmendes/geometry
 #antigen bundle ~/Playground/geometry --no-local-clone
+antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c
 
 # Does not properly work on OSX
 #antigen bundle desyncr/geometry-dir-info-prompt
 #antigen bundle https://github.com/desyncr/geo-pretty-git/
-#antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c
 
 # Tell antigen that you're done.
 antigen apply

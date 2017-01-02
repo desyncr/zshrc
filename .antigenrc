@@ -13,14 +13,14 @@ antigen bundles <<EOBUNDLES
   psprint/zsh-select
   desyncr/zsh-ctrlp
   desyncr/zsh-icdiff
-  sevanteri/zsh-dir-scroller
+  #sevanteri/zsh-dir-scroller
   Vifon/deer deer
   hlissner/zsh-autopair
 EOBUNDLES
 
 antigen bundle frmendes/geometry
 #antigen bundle ~/Playground/geometry --no-local-clone
-antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c
+#antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c
 
 # Does not properly work on OSX
 #antigen bundle desyncr/geometry-dir-info-prompt

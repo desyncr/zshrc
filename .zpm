@@ -1,0 +1,10 @@
+zpm "desyncr/key-bindings"
+zpm "desyncr/watch"
+zpm "desyncr/zsh-icdiff"
+
+zpm "frmendes/geometry"
+zpm "zsh-users/zsh-syntax-highlighting"
+zpm "zsh-users/zsh-autosuggestions"
+zpm "rupa/z"
+
+zpm "hlissner/zsh-autopair"

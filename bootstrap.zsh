@@ -13,8 +13,8 @@ source "$ZSH_CUSTOM/.env.zsh"
 #source $ANTIGEN/antigen.zsh
 #antigen init $ZSH_CUSTOM/.antigenrc
 #source $ZSH_CUSTOM/.antigenrc
-[[ ! -f "$HOME/.zpmrc" ]] && source "$ZSH_CUSTOM/.zpm"
-source "$HOME/.zpmrc" 
+[[ ! -f "$HOME/.zpm-init.zsh" ]] && source "$ZSH_CUSTOM/.zpm-zsh"
+source "$HOME/.zpm-init.zsh"
 
 # Finally set up aliases and key bindings
 source "$ZSH_CUSTOM/lib/bindings.sh"

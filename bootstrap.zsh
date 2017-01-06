@@ -10,11 +10,11 @@ source $ZSH_CUSTOM/lib/functions.zsh
 source "$ZSH_CUSTOM/.env.zsh"
 
 # Load antigen and bootstrap the configuration
-#source $ANTIGEN/antigen.zsh
-#antigen init $ZSH_CUSTOM/.antigenrc
+source $ANTIGEN/antigen.zsh
+antigen init $ZSH_CUSTOM/.antigenrc
 #source $ZSH_CUSTOM/.antigenrc
-[[ ! -f "$HOME/.zpm-init.zsh" ]] && source "$ZSH_CUSTOM/.zpm-zsh"
-source "$HOME/.zpm-init.zsh"
+#[[ ! -f "$HOME/.zpm-init.zsh" ]] && source "$ZSH_CUSTOM/.zpm-zsh"
+#source "$HOME/.zpm-init.zsh"
 
 # Finally set up aliases and key bindings
 source "$ZSH_CUSTOM/lib/bindings.sh"

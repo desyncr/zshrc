@@ -10,7 +10,8 @@ antigen bundles <<EOBUNDLES
   psprint/zsh-navigation-tools
   desyncr/gitr
   supercrabtree/k
-  psprint/zsh-select
+  #psprint/zsh-select
+  junegunn/fzf /
   desyncr/zsh-ctrlp
   desyncr/zsh-icdiff
   #sevanteri/zsh-dir-scroller

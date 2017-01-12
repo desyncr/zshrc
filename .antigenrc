@@ -17,10 +17,12 @@ antigen bundles <<EOBUNDLES
   #sevanteri/zsh-dir-scroller
   Vifon/deer deer
   hlissner/zsh-autopair
+  #willghatch/zsh-hooks
+  #softmoth/zsh-vim-mode
 EOBUNDLES
 
 antigen bundle frmendes/geometry
-#antigen bundle ~/Playground/geometry --no-local-clone
+#antigen theme ~/Playground/geometry --no-local-clone
 #antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c
 
 # Does not properly work on OSX

@@ -7,12 +7,12 @@ source $ZSH_CUSTOM/lib/functions.zsh
 # such as .env.work.zsh or .env.private.zsh.
 #load "$ZSH_CUSTOM/.env.zsh" "$ZSH_CUSTOM/.env..*.zsh"
 # ^ adds 0.01s for some reason
-source "$ZSH_CUSTOM/.env.zsh"
+source "$ZSH_CUSTOM/.env"
 
 # Load antigen and bootstrap the configuration
 source $ANTIGEN/antigen.zsh
-antigen init $ZSH_CUSTOM/.antigenrc
-#source $ZSH_CUSTOM/.antigenrc
+#antigen init $ZSH_CUSTOM/.antigenrc
+source $ZSH_CUSTOM/.antigenrc
 #[[ ! -f "$HOME/.zpm-init.zsh" ]] && source "$ZSH_CUSTOM/.zpm-zsh"
 #source "$HOME/.zpm-init.zsh"
 

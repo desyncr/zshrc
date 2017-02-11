@@ -9,4 +9,5 @@ zpm "hlissner/zsh-autopair"
 zpm "zsh-users/zsh-syntax-highlighting"
 zpm "zsh-users/zsh-autosuggestions"
 
-zpm "frmendes/geometry"
+zpm "$HOME/Playground/geometry"
+#zpm "frmendes/geometry"

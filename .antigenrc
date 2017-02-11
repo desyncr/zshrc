@@ -1,4 +1,4 @@
-#antigen use oh-my-zsh
+antigen use oh-my-zsh
 
 # Bundles
 antigen bundles <<EOBUNDLES
@@ -8,23 +8,22 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-syntax-highlighting
   psprint/zsh-navigation-tools
-  desyncr/gitr
+  #desyncr/gitr
   supercrabtree/k
   #psprint/zsh-select
   junegunn/fzf /
   desyncr/zsh-ctrlp
   desyncr/zsh-icdiff
   #sevanteri/zsh-dir-scroller
-  Vifon/deer deer
+  #Vifon/deer deer
   hlissner/zsh-autopair
   #willghatch/zsh-hooks
   #softmoth/zsh-vim-mode
 EOBUNDLES
 
-antigen bundle frmendes/geometry
-#antigen theme ~/Playground/geometry --no-local-clone
+antigen theme desyncr/void void
 
-
+# Geo prompt
 [[ $(uname) =~ 'Darwin' ]] &&
   antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c
 

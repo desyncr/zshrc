@@ -4,23 +4,23 @@ antigen use oh-my-zsh
 antigen bundles <<EOBUNDLES
   rupa/z
   desyncr/key-bindings
-  desyncr/watch
+  reem/watch@master
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-syntax-highlighting@0.5.*
   psprint/zsh-navigation-tools
   desyncr/gitr@develop
-  supercrabtree/k
-  psprint/zsh-select
+  psprint/zsh-select # required by zsh-ctrlp
   desyncr/zsh-ctrlp
   desyncr/zsh-icdiff
-  sevanteri/zsh-dir-scroller
+  #sevanteri/zsh-dir-scroller
   Vifon/deer deer
   hlissner/zsh-autopair
-  willghatch/zsh-hooks
-  softmoth/zsh-vim-mode
-  junegunn/fzf@0.16.*
-  mafredri/zsh-async@v1.5.*
-  supercrabtree/k@0.*
+  #willghatch/zsh-hooks
+  #softmoth/zsh-vim-mode
+  #junegunn/fzf@0.16.*
+  #mafredri/zsh-async@v1.5.*
+  #supercrabtree/k@0.*
+  per-directory-history
 EOBUNDLES
 
 antigen theme frmendes/geometry geometry

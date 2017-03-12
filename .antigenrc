@@ -6,22 +6,24 @@ antigen bundles <<EOBUNDLES
   desyncr/key-bindings
   desyncr/watch
   zsh-users/zsh-autosuggestions
-  zsh-users/zsh-syntax-highlighting
+  zsh-users/zsh-syntax-highlighting@0.5.*
   psprint/zsh-navigation-tools
-  #desyncr/gitr
+  desyncr/gitr@develop
   supercrabtree/k
-  #psprint/zsh-select
-  junegunn/fzf /
+  psprint/zsh-select
   desyncr/zsh-ctrlp
   desyncr/zsh-icdiff
-  #sevanteri/zsh-dir-scroller
-  #Vifon/deer deer
+  sevanteri/zsh-dir-scroller
+  Vifon/deer deer
   hlissner/zsh-autopair
-  #willghatch/zsh-hooks
-  #softmoth/zsh-vim-mode
+  willghatch/zsh-hooks
+  softmoth/zsh-vim-mode
+  junegunn/fzf@0.16.*
+  mafredri/zsh-async@v1.5.*
+  supercrabtree/k@0.*
 EOBUNDLES
 
-antigen theme desyncr/void void
+antigen theme frmendes/geometry geometry
 
 # Geo prompt
 [[ $(uname) =~ 'Darwin' ]] &&
@@ -29,7 +31,7 @@ antigen theme desyncr/void void
 
 # Does not properly work on OSX
 antigen bundle desyncr/geometry-dir-info-prompt
-#antigen bundle https://github.com/desyncr/geometry-pretty-git/
 
 # Tell antigen that you're done.
 antigen apply
+

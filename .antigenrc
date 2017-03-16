@@ -1,12 +1,12 @@
-antigen use oh-my-zsh
+#antigen use oh-my-zsh
 
 # Bundles
 antigen bundles <<EOBUNDLES
-  rupa/z
+  rupa/z@master
   desyncr/key-bindings
   reem/watch@master
-  zsh-users/zsh-autosuggestions
   zsh-users/zsh-syntax-highlighting@0.5.*
+  zsh-users/zsh-autosuggestions@develop
   psprint/zsh-navigation-tools
   desyncr/gitr@develop
   psprint/zsh-select # required by zsh-ctrlp
@@ -31,6 +31,7 @@ antigen theme frmendes/geometry geometry
 
 # Does not properly work on OSX
 antigen bundle desyncr/geometry-dir-info-prompt
+antigen bundle desyncr/geometry-pretty-git
 
 # Tell antigen that you're done.
 antigen apply

@@ -21,6 +21,7 @@ antigen bundles <<EOBUNDLES
   #mafredri/zsh-async@v1.5.*
   #supercrabtree/k@0.*
   per-directory-history
+  LuRsT/hr
 EOBUNDLES
 
 antigen theme frmendes/geometry geometry

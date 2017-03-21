@@ -12,6 +12,7 @@ source "$ZSH_CUSTOM/.env"
 # Load antigen and bootstrap the configuration
 source $ANTIGEN/antigen.zsh
 antigen init $ZSH_CUSTOM/.antigenrc
+#source $HOME/Playground/geometry/geometry.zsh-theme
 
 #[[ ! -f "$HOME/.zpm-init.zsh" ]] && source "$ZSH_CUSTOM/.zpm-zsh"
 #source "$HOME/.zpm-init.zsh"

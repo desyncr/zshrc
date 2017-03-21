@@ -26,6 +26,7 @@ antigen bundles <<EOBUNDLES
 EOBUNDLES
 
 antigen theme frmendes/geometry geometry
+#antigen theme $HOME/Playground/geometry --no-local-clone
 
 # Geo prompt
 [[ $(uname) =~ 'Darwin' ]] &&
@@ -33,7 +34,7 @@ antigen theme frmendes/geometry geometry
 
 # Does not properly work on OSX
 antigen bundle desyncr/geometry-dir-info-prompt
-antigen bundle desyncr/geometry-pretty-git
+#antigen bundle desyncr/geometry-pretty-git
 
 # Tell antigen that you're done.
 antigen apply

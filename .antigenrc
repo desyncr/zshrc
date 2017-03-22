@@ -6,7 +6,7 @@ antigen bundles <<EOBUNDLES
   desyncr/key-bindings
   reem/watch@master
   zsh-users/zsh-syntax-highlighting@0.5.*
-  zsh-users/zsh-autosuggestions@develop
+  zsh-users/zsh-autosuggestions@master # do not use develop
   psprint/zsh-navigation-tools
   desyncr/gitr@develop
   psprint/zsh-select # required by zsh-ctrlp

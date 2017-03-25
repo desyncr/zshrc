@@ -23,6 +23,7 @@ antigen bundles <<EOBUNDLES
   per-directory-history
   LuRsT/hr
   ddollar/git-utils # various git utilities
+  git://repo.or.cz/safe-rm.git # Just kill me
 EOBUNDLES
 
 antigen theme frmendes/geometry geometry

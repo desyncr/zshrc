@@ -24,6 +24,7 @@ antigen bundles <<EOBUNDLES
   LuRsT/hr
   ddollar/git-utils # various git utilities
   git://repo.or.cz/safe-rm.git # Just kill me
+  docker
 EOBUNDLES
 
 antigen theme frmendes/geometry geometry

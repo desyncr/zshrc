@@ -1,4 +1,4 @@
-#antigen use oh-my-zsh
+antigen use oh-my-zsh
 
 # Bundles
 antigen bundles <<EOBUNDLES
@@ -9,26 +9,27 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-autosuggestions@master # do not use develop
   psprint/zsh-navigation-tools
   desyncr/gitr@develop
-  psprint/zsh-select # required by zsh-ctrlp
-  desyncr/zsh-ctrlp
+  psprint/zsh-select 		# required by zsh-ctrlp
+  garybernhardt/selecta@v0.0.*
+  desyncr/zsh-ctrlp@develop
   desyncr/zsh-icdiff
-  #sevanteri/zsh-dir-scroller
+  sevanteri/zsh-dir-scroller
   Vifon/deer deer
   hlissner/zsh-autopair
-  #willghatch/zsh-hooks
   #softmoth/zsh-vim-mode
   #junegunn/fzf@0.16.*
   #mafredri/zsh-async@v1.5.*
-  #supercrabtree/k@0.*
+  supercrabtree/k@0.*
   per-directory-history
   LuRsT/hr
-  ddollar/git-utils # various git utilities
-  git://repo.or.cz/safe-rm.git # Just kill me
+  ddollar/git-utils 		# various git utilities
+  git://repo.or.cz/safe-rm.git 	# Just kill me
   docker
+  arzzen/calc.plugin.zsh
 EOBUNDLES
 
-antigen theme frmendes/geometry geometry
-#antigen theme $HOME/Playground/geometry --no-local-clone
+antigen theme frmendes/geometry
+#antigen theme $HOME/Projects/geometry --no-local-clone
 
 # Geo prompt
 [[ $(uname) =~ 'Darwin' ]] &&

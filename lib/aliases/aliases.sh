@@ -17,3 +17,4 @@ alias j=z
 
 alias pingo="ping 8.8.8.8"
 
+alias rm='safe-rm'

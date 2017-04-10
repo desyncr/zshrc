@@ -1,12 +1,15 @@
-#antigen use oh-my-zsh
+antigen use oh-my-zsh
 
 # Bundles
 antigen bundles <<EOBUNDLES
   rupa/z@master
   desyncr/key-bindings
   reem/watch@master
-  zsh-users/zsh-syntax-highlighting@0.5.*
+  #zsh-users/zsh-syntax-highlighting@0.5.*
+  zdharma/fast-syntax-highlighting
+  #psprint/fast-syntax-highlighting
   zsh-users/zsh-autosuggestions@master # do not use develop
+  zsh-users/zsh-completions
   psprint/zsh-navigation-tools
   desyncr/gitr@develop
   psprint/zsh-select # required by zsh-ctrlp
@@ -23,10 +26,10 @@ antigen bundles <<EOBUNDLES
   per-directory-history
   LuRsT/hr
   ddollar/git-utils # various git utilities
+  wd
 EOBUNDLES
 
 antigen theme frmendes/geometry geometry
-#antigen theme $HOME/Playground/geometry --no-local-clone
 
 # Geo prompt
 [[ $(uname) =~ 'Darwin' ]] &&

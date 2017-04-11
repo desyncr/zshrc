@@ -42,6 +42,9 @@ antigen theme frmendes/geometry
 antigen bundle desyncr/geometry-dir-info-prompt
 #antigen bundle desyncr/geometry-pretty-git
 
+# experimental antigen search command
+antigen bundle https://gist.github.com/desyncr/e19af22b00fb1498d9836094e13d6ddb
+
 # Tell antigen that you're done.
 antigen apply
 

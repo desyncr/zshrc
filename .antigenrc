@@ -16,14 +16,14 @@ antigen bundles <<EOBUNDLES
   desyncr/zsh-ctrlp@develop
   desyncr/zsh-icdiff
   sevanteri/zsh-dir-scroller
-  Vifon/deer deer
+  #Vifon/deer deer
   hlissner/zsh-autopair
   #softmoth/zsh-vim-mode
   #junegunn/fzf@0.16.*
   #mafredri/zsh-async@v1.5.*
   supercrabtree/k@0.*
   per-directory-history
-  LuRsT/hr
+  #LuRsT/hr
   ddollar/git-utils                    # various git utilities
   git://repo.or.cz/safe-rm.git         # Just kill me
   wd

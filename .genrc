@@ -8,7 +8,7 @@ gen psprint/zsh-navigation-tools
 gen desyncr/zsh-ctrlp
 gen desyncr/zsh-icdiff
 gen hlissner/zsh-autopair
-gen robbyrussell/oh-my-zsh plugins/wd
+gen robbyrussell/oh-my-zsh plugins/wd/wd
 gen arzzen/calc.plugin.zsh
 gen Tarrasch/zsh-autoenv
 gen frmendes/geometry

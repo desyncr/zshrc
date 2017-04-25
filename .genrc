@@ -1,0 +1,14 @@
+gen rupa/z z.sh # gen by default doesn't load .sh
+gen desyncr/key-bindings
+gen reem/watch
+gen zdharma/fast-syntax-highlighting
+gen zsh-users/zsh-autosuggestions
+gen zsh-users/zsh-completions
+gen psprint/zsh-navigation-tools
+gen desyncr/zsh-ctrlp
+gen desyncr/zsh-icdiff
+gen hlissner/zsh-autopair
+gen robbyrussell/oh-my-zsh plugins/wd
+gen arzzen/calc.plugin.zsh
+gen Tarrasch/zsh-autoenv
+gen frmendes/geometry

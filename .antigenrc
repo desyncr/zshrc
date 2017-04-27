@@ -29,6 +29,7 @@ antigen bundles <<EOBUNDLES
   wd
   docker
   arzzen/calc.plugin.zsh
+  dbkaplun/smart-cd
 EOBUNDLES
 
 antigen theme frmendes/geometry

@@ -30,21 +30,26 @@ antigen bundles <<EOBUNDLES
   docker
   arzzen/calc.plugin.zsh
   dbkaplun/smart-cd
+  tarrasch/zsh-autoenv
 EOBUNDLES
-
-antigen theme frmendes/geometry
-#antigen theme $HOME/Projects/geometry --no-local-clone
-
-# Geo prompt
-[[ $(uname) =~ 'Darwin' ]] &&
-  antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c
-
-# Does not properly work on OSX
-antigen bundle desyncr/geometry-dir-info-prompt
-#antigen bundle desyncr/geometry-pretty-git
 
 # experimental antigen search command
 antigen bundle https://gist.github.com/desyncr/e19af22b00fb1498d9836094e13d6ddb
+
+case $(uname) in
+  Linux)
+    antigen theme desyncr/void void
+  ;;
+  Darwin)
+    #antigen theme $HOME/Projects/geometry --no-local-clone
+    antigen theme frmendes/geometry
+    # Geo prompt
+    antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c
+    # Does not properly work on OSX
+    antigen bundle desyncr/geometry-dir-info-prompt
+    #antigen bundle desyncr/geometry-pretty-git
+  ;;
+esac
 
 # Tell antigen that you're done.
 antigen apply

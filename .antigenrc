@@ -29,7 +29,7 @@ antigen bundles <<EOBUNDLES
   wd
   docker
   arzzen/calc.plugin.zsh
-  dbkaplun/smart-cd
+  #dbkaplun/smart-cd
   tarrasch/zsh-autoenv
 EOBUNDLES
 
@@ -38,10 +38,9 @@ antigen bundle https://gist.github.com/desyncr/e19af22b00fb1498d9836094e13d6ddb
 
 case $(uname) in
   Linux)
-    antigen theme desyncr/void void
+    antigen theme desyncr/void
   ;;
   Darwin)
-    #antigen theme $HOME/Projects/geometry --no-local-clone
     antigen theme frmendes/geometry
     # Geo prompt
     antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c

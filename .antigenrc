@@ -31,6 +31,7 @@ antigen bundles <<EOBUNDLES
   arzzen/calc.plugin.zsh
   #dbkaplun/smart-cd
   tarrasch/zsh-autoenv
+  desyncr/auto-ls
 EOBUNDLES
 
 # experimental antigen search command
@@ -38,7 +39,7 @@ antigen bundle https://gist.github.com/desyncr/e19af22b00fb1498d9836094e13d6ddb
 
 case $(uname) in
   Linux)
-    antigen theme desyncr/void void
+    antigen theme desyncr/void
   ;;
   Darwin)
     antigen theme frmendes/geometry

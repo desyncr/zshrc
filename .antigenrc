@@ -32,6 +32,7 @@ antigen bundles <<EOBUNDLES
   #dbkaplun/smart-cd
   tarrasch/zsh-autoenv
   desyncr/auto-ls
+  desyncr/zsh-autocompl
 EOBUNDLES
 
 # experimental antigen search command

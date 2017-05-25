@@ -40,7 +40,7 @@ antigen bundle https://gist.github.com/desyncr/e19af22b00fb1498d9836094e13d6ddb
 
 case $(uname) in
   Linux)
-    antigen theme desyncr/void
+    antigen theme desyncr/void void
   ;;
   Darwin)
     antigen theme frmendes/geometry

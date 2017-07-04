@@ -37,6 +37,5 @@ zstyle ':completion:*:*' menu select long
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path $HOME/.zshrc.d/
-
 ZSH_CUSTOM=${ZSH_CUSTOM:-$HOME/.zshrc.d}
 source $ZSH_CUSTOM/bootstrap.zsh

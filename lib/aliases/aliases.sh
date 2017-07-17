@@ -16,5 +16,11 @@ alias //='echo "">/dev/null'
 alias j=z
 
 alias pingo="ping 8.8.8.8"
+alias p="ping 8.8.8.8"
 
-alias rm='safe-rm'
+
+if (( $+commands[safe-rm] )); then
+  alias rm='safe-rm'
+else
+  alias rm='rm -i'
+fi

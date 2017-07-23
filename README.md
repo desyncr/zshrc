@@ -29,11 +29,11 @@ Check ``bootstrap.zsh`` for examples and default configuration.
 
 ## Customize
 
-``bootstrap.zsh`` is reponsible for loading any custom script such as ``functions.sh``,
+``bootstrap.zsh`` is responsible for loading any custom script such as ``functions.sh``,
 ``aliases.sh`` and any custom library.
 
 The files ``functions.sh`` and ``aliases.sh`` holds any custom function and aliases
-respectibly.
+respectably.
 
 Custom themes are located at ``themes`` directory . Custom libraries are located at ``lib``
 directory.

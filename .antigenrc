@@ -23,7 +23,7 @@ antigen bundles <<EOBUNDLES
   #mafredri/zsh-async@v1.5.*
   supercrabtree/k@0.*
   per-directory-history
-  #LuRsT/hr
+  LuRsT/hr
   ddollar/git-utils                    # various git utilities
   git://repo.or.cz/safe-rm.git         # Just kill me
   wd
@@ -32,7 +32,7 @@ antigen bundles <<EOBUNDLES
   #dbkaplun/smart-cd
   tarrasch/zsh-autoenv
   desyncr/auto-ls
-  #desyncr/zsh-autocompl
+  desyncr/zsh-autocompl
 EOBUNDLES
 
 # experimental antigen search command
@@ -43,7 +43,7 @@ case $(uname) in
     antigen theme desyncr/void void
   ;;
   Darwin)
-    antigen theme fribmendes/geometry
+    antigen theme geometry-zsh/geometry
     # Geo prompt
     antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c
     # Does not properly work on OSX

@@ -35,4 +35,5 @@ alias km="sudo pkill memcached"
 alias gruntt="cd $AFL_ROOT/afluenta_web/grunt-public && grunt build-all && grunt watch"
 alias gr=gruntt
 
-alias mysql="mysql --host=192.168.1.210 --user=afluenta --password=dev#root afluenta"
+alias my="mysql --host=192.168.1.210 --user=afluenta --password=dev#root afluenta"
+alias sw="php $AFL_SCRIPTS/switch_geo.php "

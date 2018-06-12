@@ -9,13 +9,13 @@ antigen bundles <<EOBUNDLES
   zdharma/fast-syntax-highlighting
   zsh-users/zsh-autosuggestions@master # do not use develop
   zsh-users/zsh-completions
-  psprint/zsh-navigation-tools
-  desyncr/gitr@develop
+  #psprint/zsh-navigation-tools
+  #desyncr/gitr@develop
   psprint/zsh-select                   # required by zsh-ctrlp
   garybernhardt/selecta@v0.0.*
   desyncr/zsh-ctrlp@develop
   desyncr/zsh-icdiff
-  sevanteri/zsh-dir-scroller
+  #sevanteri/zsh-dir-scroller
   #Vifon/deer deer
   hlissner/zsh-autopair
   #softmoth/zsh-vim-mode
@@ -26,17 +26,17 @@ antigen bundles <<EOBUNDLES
   LuRsT/hr
   ddollar/git-utils                    # various git utilities
   git://repo.or.cz/safe-rm.git         # Just kill me
-  wd
+  #wd
   docker
   arzzen/calc.plugin.zsh
   #dbkaplun/smart-cd
-  tarrasch/zsh-autoenv
+  #tarrasch/zsh-autoenv
   desyncr/auto-ls
   desyncr/zsh-autocompl
 EOBUNDLES
 
 # experimental antigen search command
-antigen bundle https://gist.github.com/desyncr/e19af22b00fb1498d9836094e13d6ddb
+#antigen bundle https://gist.github.com/desyncr/e19af22b00fb1498d9836094e13d6ddb
 
 case $(uname) in
   Linux)

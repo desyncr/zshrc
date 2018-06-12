@@ -15,12 +15,17 @@ alias \#='echo "">/dev/null'
 alias //='echo "">/dev/null'
 alias j=z
 
-alias pingo="ping 8.8.8.8"
+alias pingo="while [[ $? ]]; do ping 8.8.8.8; sleep 1; done"
 alias p="ping 8.8.8.8"
-
 
 if (( $+commands[safe-rm] )); then
   alias rm='safe-rm'
 else
   alias rm='rm -i'
 fi
+
+case $(uname) in
+  Linux)
+    alias open=nautilus
+    ;;
+esac

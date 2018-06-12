@@ -37,3 +37,4 @@ alias gr=gruntt
 
 alias my="mysql --host=192.168.1.210 --user=afluenta --password=dev#root afluenta"
 alias sw="php $AFL_SCRIPTS/switch_geo.php "
+

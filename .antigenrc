@@ -9,7 +9,7 @@ antigen bundles <<EOBUNDLES
   zdharma/fast-syntax-highlighting
   zsh-users/zsh-autosuggestions@master # do not use develop
   zsh-users/zsh-completions
-  #psprint/zsh-navigation-tools
+  psprint/zsh-navigation-tools
   #desyncr/gitr@develop
   psprint/zsh-select                   # required by zsh-ctrlp
   garybernhardt/selecta@v0.0.*
@@ -32,7 +32,7 @@ antigen bundles <<EOBUNDLES
   #dbkaplun/smart-cd
   #tarrasch/zsh-autoenv
   desyncr/auto-ls
-  desyncr/zsh-autocompl
+  #desyncr/zsh-autocompl
 EOBUNDLES
 
 # experimental antigen search command

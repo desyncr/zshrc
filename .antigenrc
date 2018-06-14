@@ -43,10 +43,9 @@ case $(uname) in
     antigen theme desyncr/void void
   ;;
   Darwin)
-    #antigen bundle desyncr/geometry-datetime
     antigen theme geometry-zsh/geometry
-    # Geo prompt
-    antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c
+    #antigen bundle desyncr/geometry-datetime
+    antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c # geo prompt
     # Does not properly work on OSX
     antigen bundle desyncr/geometry-dir-info-prompt
     #antigen bundle desyncr/geometry-pretty-git

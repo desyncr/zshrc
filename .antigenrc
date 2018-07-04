@@ -5,8 +5,8 @@ antigen bundles <<EOBUNDLES
   rupa/z@master
   desyncr/key-bindings
   reem/watch@master
-  #zsh-users/zsh-syntax-highlighting@0.5.*
-  zdharma/fast-syntax-highlighting
+  zsh-users/zsh-syntax-highlighting@0.5.*
+  #zdharma/fast-syntax-highlighting
   zsh-users/zsh-autosuggestions@master # do not use develop
   zsh-users/zsh-completions
   psprint/zsh-navigation-tools
@@ -43,9 +43,10 @@ case $(uname) in
     antigen theme desyncr/void void
   ;;
   Darwin)
-    antigen theme geometry-zsh/geometry
+    antigen theme bhilburn/powerlevel9k
+    #antigen theme geometry-zsh/geometry
     #antigen bundle desyncr/geometry-datetime
-    antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c # geo prompt
+    #antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c # geo prompt
     # Does not properly work on OSX
     #antigen bundle desyncr/geometry-dir-info-prompt
     #antigen bundle desyncr/geometry-pretty-git
@@ -54,4 +55,11 @@ esac
 
 # Tell antigen that you're done.
 antigen apply
+
+ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(
+    "expand-or-complete"
+    "pcomplete"
+    "copy-earlier-word"
+)
+bindkey '^l' autosuggest-accept
 

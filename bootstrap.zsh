@@ -7,7 +7,7 @@ source $ZSH_CUSTOM/lib/functions.zsh
 # such as .env.work.zsh or .env.private.zsh.
 #load "$ZSH_CUSTOM/.env.zsh" "$ZSH_CUSTOM/.env..*.zsh"
 # ^ adds 0.01s for some reason
-load "$ZSH_CUSTOM/.env.d/*.zsh"
+load "$ZSH_CUSTOM/.env.d/*"
 source "$ZSH_CUSTOM/.env"
 
 # Load antigen and bootstrap the configuration

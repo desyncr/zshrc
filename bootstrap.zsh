@@ -18,4 +18,5 @@ antigen init $ZSH_CUSTOM/.antigenrc
 #source "$HOME/.zpm-init.zsh"
 
 # Finally set up aliases and key bindings
+
 load "$ZSH_CUSTOM/alias/.*.sh"

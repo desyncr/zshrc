@@ -29,3 +29,6 @@ case $(uname) in
     alias open=nautilus
     ;;
 esac
+
+alias c=clear
+

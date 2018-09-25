@@ -40,3 +40,7 @@ zstyle ':completion:*' cache-path $HOME/.zshrc.d/
 
 ZSH_CUSTOM=${ZSH_CUSTOM:-$HOME/.zshrc.d}
 source $ZSH_CUSTOM/bootstrap.zsh
+
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

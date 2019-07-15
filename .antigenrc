@@ -14,7 +14,7 @@ antigen bundles <<EOBUNDLES
   psprint/zsh-select                   # required by zsh-ctrlp
   garybernhardt/selecta@v0.0.*
   desyncr/zsh-ctrlp@develop
-  desyncr/zsh-icdiff
+  #desyncr/zsh-icdiff
   #sevanteri/zsh-dir-scroller
   #Vifon/deer deer
   hlissner/zsh-autopair

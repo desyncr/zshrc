@@ -41,5 +41,4 @@ zstyle ':completion:*' cache-path $HOME/.zshrc.d/
 ZSH_CUSTOM=${ZSH_CUSTOM:-$HOME/.zshrc.d}
 source $ZSH_CUSTOM/bootstrap.zsh
 
-# Ctrl+E edit commmand line vim
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+ Ctrl+E edit commmand line vim

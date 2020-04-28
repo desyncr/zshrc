@@ -37,4 +37,4 @@ alias gr=gruntt
 
 alias my="mysql --host=192.168.1.210 --user=afluenta --password=dev#root afluenta"
 alias sw="php $AFL_SCRIPTS/switch_geo.php "
-
+alias mongo='( screen -dmS mongo docker run --rm -p 27017:27017 mongo ) && echo Starting mongo...'

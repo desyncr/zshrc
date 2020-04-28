@@ -42,3 +42,4 @@ ZSH_CUSTOM=${ZSH_CUSTOM:-$HOME/.zshrc.d}
 source $ZSH_CUSTOM/bootstrap.zsh
 
 # Ctrl+E edit commmand line vim
+PATH=$PATH:$HOME/.gem/ruby/2.6.0/bin

@@ -43,7 +43,8 @@ case $(uname) in
     antigen theme desyncr/void void
   ;;
   Darwin)
-    antigen theme bhilburn/powerlevel9k
+    antigen theme desyncr/void void
+    #antigen theme bhilburn/powerlevel9k
     #antigen theme geometry-zsh/geometry
     #antigen bundle desyncr/geometry-datetime
     #antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c # geo prompt

@@ -31,7 +31,7 @@ antigen bundles <<EOBUNDLES
   arzzen/calc.plugin.zsh
   #dbkaplun/smart-cd
   #tarrasch/zsh-autoenv
-  desyncr/auto-ls
+  #desyncr/auto-ls
   #desyncr/zsh-autocompl
 EOBUNDLES
 

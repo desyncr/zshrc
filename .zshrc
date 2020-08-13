@@ -43,3 +43,13 @@ source $ZSH_CUSTOM/bootstrap.zsh
 
 # Ctrl+E edit commmand line vim
 PATH=$PATH:$HOME/.gem/ruby/2.6.0/bin
+export GPG_TTY=`tty`
+
+# All the javas
+export JAVA8_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA11_HOME=`/usr/libexec/java_home -v 11`
+export JAVA14_HOME=`/usr/libexec/java_home -v 14`
+
+alias java_swith_v8=JAVA_HOME=$JAVA8_HOME
+alias java_swith_v11=JAVA_HOME=$JAVA11_HOME
+alias java_swith_v14=JAVA_HOME=$JAVA14_HOME

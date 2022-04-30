@@ -8,8 +8,8 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-syntax-highlighting@0.5.*
   #zdharma/fast-syntax-highlighting
   zsh-users/zsh-autosuggestions@master # do not use develop
-  zsh-users/zsh-completions
-  psprint/zsh-navigation-tools
+  #zsh-users/zsh-completions
+  #psprint/zsh-navigation-tools
   #desyncr/gitr@develop
   psprint/zsh-select                   # required by zsh-ctrlp
   garybernhardt/selecta@v0.0.*
@@ -17,18 +17,18 @@ antigen bundles <<EOBUNDLES
   #desyncr/zsh-icdiff
   #sevanteri/zsh-dir-scroller
   #Vifon/deer deer
-  hlissner/zsh-autopair
+  #hlissner/zsh-autopair
   #softmoth/zsh-vim-mode
   #junegunn/fzf@0.16.*
   #mafredri/zsh-async@v1.5.*
-  supercrabtree/k@0.*
+  #supercrabtree/k@0.*
   per-directory-history
-  LuRsT/hr
-  ddollar/git-utils                    # various git utilities
-  git://repo.or.cz/safe-rm.git         # Just kill me
+  #LuRsT/hr
+  #ddollar/git-utils                    # various git utilities
+  #git://repo.or.cz/safe-rm.git         # Just kill me
   #wd
-  docker
-  arzzen/calc.plugin.zsh
+  #docker
+  #arzzen/calc.plugin.zsh
   #dbkaplun/smart-cd
   #tarrasch/zsh-autoenv
   #desyncr/auto-ls
@@ -44,13 +44,6 @@ case $(uname) in
   ;;
   Darwin)
     antigen theme desyncr/void void
-    #antigen theme bhilburn/powerlevel9k
-    #antigen theme geometry-zsh/geometry
-    #antigen bundle desyncr/geometry-datetime
-    #antigen bundle https://gist.github.com/desyncr/6262aa698ecbcf773378cf1ea14d0e2c # geo prompt
-    # Does not properly work on OSX
-    #antigen bundle desyncr/geometry-dir-info-prompt
-    #antigen bundle desyncr/geometry-pretty-git
   ;;
 esac
 

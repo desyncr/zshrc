@@ -3,13 +3,6 @@ tophistory() {
   history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head -n 30
 }
 
-# quick and dirty calc
-calc() {
-      autoload zcalc
-      zcalc "$*"
-      #echo "scale=3;$@" | bc -l
-}
-
 # search keyword [path]
 search() {
     arg=()

@@ -1,4 +1,0 @@
-unset LSCOLORS
-export CLICOLOR=1
-export CLICOLOR_FORCE=1
-

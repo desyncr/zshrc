@@ -26,6 +26,5 @@ export PATH=$PATH:/usr/local/bin
 # https://github.com/bhilburn/powerlevel9k/issues/420
 export ZLE_RPROMPT_INDENT=0
 
-AUTO_LS_COMMANDS=()
-
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=245'
+export PATH="/usr/local/opt/php@7.4/bin:$PATH"
+export PATH="/usr/local/opt/php@7.4/sbin:$PATH"

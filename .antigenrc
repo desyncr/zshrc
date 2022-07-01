@@ -2,15 +2,14 @@ antigen use oh-my-zsh
 
 # Bundles
 antigen bundles <<EOBUNDLES
-  rupa/z@master
+  rupa/z@master                         # life depends on this
   desyncr/key-bindings
-  reem/watch@master
-  zsh-users/zsh-syntax-highlighting@0.5.*
-  zsh-users/zsh-autosuggestions@master # do not use develop
-  psprint/zsh-select                   # required by zsh-ctrlp
-  garybernhardt/selecta@v0.0.*
-  desyncr/zsh-ctrlp@develop
-  per-directory-history
+
+  zsh-users/zsh-syntax-highlighting
+  zsh-users/zsh-autosuggestions
+
+  desyncr/zsh-ctrlp@develop            # find files, uses fzf
+  joshskidmore/zsh-fzf-history-search  # uses fzf for sarching command history
 EOBUNDLES
 
 antigen theme desyncr/void void
@@ -23,4 +22,6 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(
     "pcomplete"
     "copy-earlier-word"
 )
+
+# ctrl-l, hjkl
 bindkey '^l' autosuggest-accept

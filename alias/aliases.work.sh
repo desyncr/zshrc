@@ -12,3 +12,5 @@ alias exads-cc='vagrant ssh web -c "sudo -u exads -i php /var/www/jobs/campaigns
 alias exads-ccp='vagrant ssh web -c "sudo -u exads -i php /var/www/jobs/campaigns-caching-v3-push.php --XXX --network=exads.rocks --network-hash=e738bad9 --debug"'
 
 alias exads-my='vagrant ssh dbm -c "sudo mysql exads -pexads"'
+
+alias vim='/usr/local/bin/vim'

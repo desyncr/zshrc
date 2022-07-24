@@ -10,6 +10,8 @@ antigen bundles <<EOBUNDLES
 
   desyncr/zsh-ctrlp@develop            # find files, uses fzf
   joshskidmore/zsh-fzf-history-search  # uses fzf for sarching command history
+
+  desyncr/auto-ls
 EOBUNDLES
 
 antigen theme desyncr/void void

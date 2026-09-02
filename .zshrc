@@ -43,3 +43,5 @@ source $ZSH_CUSTOM/bootstrap.zsh
 
 # Ctrl+E edit commmand line vim
 export GPG_TTY=`tty`
+
+export PATH="/Users/dario/.local/bin:$PATH"

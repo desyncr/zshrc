@@ -1,5 +1,5 @@
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
+export LC_ALL=en_GB.UTF-8
+export LANG=en_GB.UTF-8
 
 # Configure vim as default editor
 export GIT_EDITOR=vim
@@ -26,12 +26,13 @@ export PATH=$PATH:/usr/local/bin
 # https://github.com/bhilburn/powerlevel9k/issues/420
 export ZLE_RPROMPT_INDENT=0
 
-export PATH="/usr/local/opt/php@7.4/bin:$PATH"
-export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
-
-export GOPATH=$HOME/go
-export GOROOT="/usr/local/opt/go/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+export GOROOT=/opt/homebrew/opt/go/libexec/
+export PATH=$PATH:$GOROOT/bin
+function auto-ls-eza () {
+  ls -l 
+}
+export AUTO_LS_NEWLINE=false
+export AUTO_LS_COMMANDS=('eza' git-status)
 
 export HISTCONTROL=erasedups:ignorespace
 export ZSH_FZF_HISTORY_SEARCH_REMOVE_DUPLICATES='true'

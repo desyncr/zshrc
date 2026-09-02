@@ -7,21 +7,23 @@ alias du='du -hd1|sort -h'
 alias pingo="while [[ $? ]]; do ping 8.8.8.8; sleep 1; done"
 #alias p="ping 8.8.8.8"
 
-# safe-rm if available
-if (( $+commands[safe-rm] )); then
-  alias rm='safe-rm'
-else
-  alias rm='rm -i'
-fi
+alias rm='rm -i'
 
 # if pbcopy is not available
 if ! which pbcopy &>/dev/null && which xsel &>/dev/null; then
-    alias pbcopy='xsel --clipboard --input'
-    alias pbpaste='xsel --clipboard --output'
+  alias pbcopy='xsel --clipboard --input'
+  alias pbpaste='xsel --clipboard --output'
 fi
 
+alias lg=lazygit
+
 case $(uname) in
-  Linux)
-    alias open=nautilus
-    ;;
+Linux)
+  alias open=nautilus
+  ;;
 esac
+
+alias vi=vim
+alias vim=nvim
+alias gd=lg
+alias ls="eza -l"

@@ -108,15 +108,3 @@ ctrlf () {
     vared -p 'What would you like to find?: ' tmp
     find . -type file -print | xargs grep -i --color=auto $tmp
 }
-
-if [[ "$_ENABLE_MARK" == true ]]; then
-    zmodload zsh/datetime
-    _ZSH_TIME_MARK=$EPOCHREALTIME
-    mark() {
-        ((  res=$EPOCHREALTIME-$_ZSH_TIME_MARK ))
-        _ZSH_TIME_MARK=$EPOCHREALTIME
-        echo $res $*
-    }
-else
-   mark() {}
-fi

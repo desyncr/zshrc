@@ -8,7 +8,7 @@ alias pingo="while [[ $? ]]; do ping 8.8.8.8; sleep 1; done"
 #alias p="ping 8.8.8.8"
 alias vim=nvim
 
-alias rm='rm -i'
+#alias rm='rm -i'
 
 # if pbcopy is not available
 if ! which pbcopy &>/dev/null && which xsel &>/dev/null; then

@@ -7,7 +7,8 @@ export VISUAL=vim
 export EDITOR=vim
 
 # Set up antigen path
-ANTIGEN=${ANTIGEN:-"$HOME/.antigen"}
+ANTIGEN="$HOME/.config/antigen"
+ADOTDIR="$HOME/.config/antigen"
 
 # Custom configuration
 export HISTORY_BASE=~/.config/directory_history
@@ -36,3 +37,5 @@ export AUTO_LS_COMMANDS=('eza' git-status)
 
 export HISTCONTROL=erasedups:ignorespace
 export ZSH_FZF_HISTORY_SEARCH_REMOVE_DUPLICATES='true'
+
+fpath=($fpath ~/.zsh/completions )

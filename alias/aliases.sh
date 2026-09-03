@@ -6,6 +6,7 @@ alias du='du -hd1|sort -h'
 
 alias pingo="while [[ $? ]]; do ping 8.8.8.8; sleep 1; done"
 #alias p="ping 8.8.8.8"
+alias vim=nvim
 
 alias rm='rm -i'
 

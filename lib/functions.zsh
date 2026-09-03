@@ -1,3 +1,17 @@
+# git functions
+push() {
+  echo git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+  git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+}
+
+pull() {
+  git pull
+}
+
+branch() {
+  git checkout -b $1
+}
+
 # displays command history sorted by usage
 tophistory() {
   history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head -n 30

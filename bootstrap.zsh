@@ -1,12 +1,11 @@
 # Load zsh custom sources
-source $ZSH_CUSTOM/lib/functions.zsh
+source $ZSH_CUSTOM/functions.zsh
 
 # Load all environment variables
-source "$ZSH_CUSTOM/env"
+source "$ZSH_CUSTOM/env.zsh"
 
 # Load antigen and bootstrap the configuration
 source /usr/local/share/antigen.zsh
-antigen init $ZSH_CUSTOM/.antigenrc
+antigen init $ZSH_CUSTOM/antigenrc
 
-# Finally set up aliases and key bindings
-load "$ZSH_CUSTOM/alias/.*.sh"
+source "$ZSH_CUSTOM/alias.zsh"

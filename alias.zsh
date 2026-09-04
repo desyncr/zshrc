@@ -5,9 +5,6 @@ alias pwgen="openssl rand -base63 24"
 alias du='du -hd1|sort -h'
 
 alias pingo="while [[ $? ]]; do ping 8.8.8.8; sleep 1; done"
-#alias p="ping 8.8.8.8"
-
-#alias rm='rm -i'
 
 # if pbcopy is not available
 if ! which pbcopy &>/dev/null && which xsel &>/dev/null; then
@@ -15,8 +12,10 @@ if ! which pbcopy &>/dev/null && which xsel &>/dev/null; then
   alias pbpaste='xsel --clipboard --output'
 fi
 
+# git
 alias lg=lazygit
-
+alias gd=lazygit
 alias vim=nvim
-alias gd=lg
 alias ls="eza -l"
+alias gc="git commit "
+alias gs="git status "

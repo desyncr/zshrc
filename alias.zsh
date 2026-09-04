@@ -17,6 +17,14 @@ alias lg=lazygit
 alias gd=lazygit
 alias vim=nvim
 alias v=nvim
-alias ls="eza -l"
+
+# Replace ls with eza
+alias ls='eza'
+
+# Common combinations
+alias ll='eza -l --icons --git'
+alias la='eza -la --icons --git'
+alias lt='eza -T --icons --git-ignore'
+
 alias gc="git commit "
 alias gs="git status "

@@ -1,10 +1,10 @@
 # shortcuts
 alias c=clear
 alias df="df -h "
-alias pwgen="openssl rand -base63 24"
+alias pwgen="openssl rand -base64 24"
 alias du='du -hd1|sort -h'
 
-alias pingo="while [[ $? ]]; do ping 8.8.8.8; sleep 1; done"
+alias pingo="ping 8.8.8.8"
 
 # if pbcopy is not available
 if ! which pbcopy &>/dev/null && which xsel &>/dev/null; then

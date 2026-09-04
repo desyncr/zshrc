@@ -27,7 +27,7 @@ search() {
         pattern=$1
     fi
 
-    /usr/bin/find ${arg[@]} -type f -exec grep -Hin1 "$pattern" {} \;
+    /usr/bin/find ${arg[@]} -type f -exec grep -HinC1 "$pattern" {} \;
 }
 
 # upto user@example.com example.zip ['~']
@@ -106,5 +106,5 @@ psg() {
 ctrlf () {
     local tmp
     vared -p 'What would you like to find?: ' tmp
-    find . -type file -print | xargs grep -i --color=auto $tmp
+    find . -type f -print | xargs grep -i --color=auto $tmp
 }

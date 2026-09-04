@@ -1,12 +1,14 @@
+typeset -U path PATH
 setopt histignorealldups
+setopt hist_ignore_space share_history hist_expire_dups_first
 
 # Use emacs keybindings even if our EDITOR is set to vi
 #bindkey -e
 
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=1000
-SAVEHIST=1000
-HISTFILE=~/.config/zsh_history
+# Keep n lines of history within the shell and save it to ~/.zsh_history:
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=$HOME/.config/zsh_history
 
 # work both on unix and linux
 if which dircolors > /dev/null; then
@@ -36,12 +38,10 @@ zstyle ':completion:*:*' menu select long
 
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path $HOME/.zshrc.d/
+zstyle ':completion:*' cache-path $HOME/.cache/zsh
 
-ZSH_CUSTOM=${ZSH_CUSTOM:-$HOME/.zshrc.d}
+ZSH_CUSTOM=$HOME/.zshrc.d
 source $ZSH_CUSTOM/bootstrap.zsh
 
-# Ctrl+E edit commmand line vim
-export GPG_TTY=`tty`
-
-export PATH="/Users/dario/.local/bin:$PATH"
+export GPG_TTY=$(tty)
+export PATH="$HOME/.local/bin:$PATH"

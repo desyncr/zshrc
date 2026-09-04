@@ -26,5 +26,12 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(
     "copy-earlier-word"
 )
 
+function auto-ls-eza () {
+  ls -ltra
+}
+
+export AUTO_LS_NEWLINE=false
+export AUTO_LS_COMMANDS=('eza' git-status)
+
 # ctrl-l, hjkl
 bindkey '^l' autosuggest-accept

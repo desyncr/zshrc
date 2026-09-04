@@ -30,13 +30,6 @@ export ZLE_RPROMPT_INDENT=0
 export GOROOT=/opt/homebrew/opt/go/libexec/
 export PATH=$PATH:$GOROOT/bin
 
-function auto-ls-eza () {
-  ls -l
-}
-
-export AUTO_LS_NEWLINE=false
-export AUTO_LS_COMMANDS=('eza' git-status)
-
 export HISTCONTROL=erasedups:ignorespace
 export ZSH_FZF_HISTORY_SEARCH_REMOVE_DUPLICATES='true'
 

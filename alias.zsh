@@ -16,6 +16,7 @@ fi
 alias lg=lazygit
 alias gd=lazygit
 alias vim=nvim
+alias v=nvim
 alias ls="eza -l"
 alias gc="git commit "
 alias gs="git status "

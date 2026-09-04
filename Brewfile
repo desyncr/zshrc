@@ -1,56 +1,65 @@
 # CLI essentials
-brew install git
-brew install gh # GitHub CLI
-brew install lazygit
-brew install tmux
-brew install htop
-brew install eza # modern ls replacement
-brew install zoxide # z/jump - https://github.com/ajeetdsouza/zoxide
-brew install fzf
-brew install ripgrep # rg
-brew install fd
-brew install findutils # https://stackoverflow.com/questions/39903571/gnu-find-on-macos
-brew install grep
-brew install gnu-getopt
-brew install jq
-brew install python-yq # yaml/xml version of jq
-brew install icdiff
-brew install wget
-brew install neovim
-brew install lf # terminal file manager
+brew "tree"
+brew "git"
+brew "gh" # GitHub CLI
+brew "lazygit"
+brew "tmux"
+brew "htop"
+brew "eza" # modern ls replacement
+brew "zoxide" # z/jump - https://github.com/ajeetdsouza/zoxide
+brew "fzf"
+brew "ripgrep" # rg
+brew "fd" # Simple, fast and user-friendly alternative to find
+
+# Collection of GNU find, xargs, and locate
+brew "findutils" # https://stackoverflow.com/questions/39903571/gnu-find-on-macos
+
+brew "grep"
+brew "gnu-getopt"
+brew "jq"
+brew "python-yq" # yaml/xml version of jq
+brew "icdiff"
+brew "wget"
+brew "neovim"
+brew "lf" # terminal file manager
 
 # Dev tooling
-brew install nvm
-brew install pipx
-brew install uv
-# brew install php
-# brew install php-cs-fixer
-# brew install mysql
-brew install litecli # CLI for SQLite
-# brew install nginx
-# brew install dnsmasq
-# brew install cmake
-# brew install k6 # load testing
-# brew install wrk # HTTP benchmarking
-brew install cronboard
-brew install terminal-notifier
+brew "ansible"
+brew "nvm"
+brew "pipx"
+brew "uv"
+# brew php
+# brew php-cs-fixer
+# brew mysql
+brew "litecli" # CLI for SQLite
+# brew nginx
+# brew dnsmasq
+# brew cmake
+# brew k6 # load testing
+# brew wrk # HTTP benchmarking
+brew "cronboard"
+brew "terminal-notifier"
 
 # Apps
-brew install --cask ghostty
-brew install --cask raycast
-brew install --cask alt-tab
-brew install --cask shortcat
-brew install --cask hiddenbar
-brew install --cask firefox
-brew install --cask slack
-brew install --cask deezer
-brew install --cask dbeaver-community
-# brew install --cask copilot-cli
+cask "ghostty"
+cask "raycast"
+cask "alt-tab"
+cask "shortcat"
+cask "hiddenbar" # or dozer
+cask "firefox"
+cask "slack"
+cask "deezer"
+cask "dbeaver-community"
+# cask "copilot-cli"
 
 # Fonts
-brew install --cask font-fira-sans
-brew install --cask font-jetbrains-mono
-brew install --cask font-jetbrains-mono-nerd-font
+cask "font-fira-sans"
+cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-meslo-lg-nerd-font"
+cask "font-noto-color-emoji"
+cask "font-noto-sans-symbols"
+cask "font-symbols-only-nerd-font"
 
 # VMs / networking
 # brew install --cask vagrant

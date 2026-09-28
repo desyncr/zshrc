@@ -71,7 +71,7 @@ load() {
     done
 }
 
-# list and filter processes 
+# list and filter processes
 # usage:
 # 	psg regexp [--kill]
 # example:

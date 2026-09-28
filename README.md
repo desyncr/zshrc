@@ -27,11 +27,19 @@ Check ``bootstrap.zsh`` for examples and default configuration.
 
 ## Customize
 
-``bootstrap.zsh`` is responsible for loading any custom script such as ``functions.sh``,
-``aliases.sh`` and any custom library.
+``bootstrap.zsh`` is responsible for loading any custom script such as ``functions.zsh``,
+``alias.zsh`` and any custom library.
 
-The files ``functions.sh`` and ``aliases.sh`` holds any custom function and aliases
-respectably.
+Config is split by scope:
+
+* ``personal/`` — generic config meant to be shared publicly (tracked in git).
+* ``work/`` — machine/company-specific config: internal hostnames, VPN-only
+  paths, employer tooling, etc. Gitignored, so it never leaves the machine
+  it's set up on. See ``work/README.md``.
+
+Both directories follow the same file convention: ``alias.zsh``,
+``functions.zsh``, ``env.zsh``. ``bootstrap.zsh`` always loads ``personal/``,
+then loads any matching files under ``work/`` if present.
 
 Custom themes are located at ``themes`` directory . Custom libraries are located at ``lib``
 directory.

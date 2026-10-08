@@ -1,2 +1,5 @@
 *private*
 *.zwc
+
+# machine/company-specific config — see work/README.md
+work/*.zsh

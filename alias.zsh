@@ -18,13 +18,31 @@ alias gd=lazygit
 alias vim=nvim
 alias v=nvim
 
-# Replace ls with eza
-alias ls='eza'
+# Replace ls with eza while accepting GNU ls's -t short option.
+function ls() {
+  local arg translated
+  local -i parsing_options=1
+  local -a eza_args
+
+  for arg in "$@"; do
+    if (( parsing_options )) && [[ "$arg" == "--" ]]; then
+      parsing_options=0
+      eza_args+=("$arg")
+    elif (( parsing_options )) && [[ "$arg" == -[^-]*t* ]]; then
+      translated="${arg//t/}"
+      [[ "$translated" != "-" ]] && eza_args+=("$translated")
+    else
+      eza_args+=("$arg")
+    fi
+  done
+
+  command eza -s modified "${eza_args[@]}"
+}
 
 # Common combinations
-alias ll='eza -l --icons --git'
-alias la='eza -la --icons --git'
-alias lt='eza -T --icons --git-ignore'
+alias ll='eza -l -smodified --icons --git'
+alias la='eza -la -smodified --icons --git'
+alias lt='eza -T -smodified --icons --git-ignore'
 
 alias gc="git commit "
 alias gs="git status "
